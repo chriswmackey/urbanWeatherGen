@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.solarcalcs &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.solarcalcs</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Class for solar calculations.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">range</span> <span class="o">=</span> <span class="n">xrange</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+
+<div class="viewcode-block" id="SolarCalcs"><a class="viewcode-back" href="../../uwg.solarcalcs.html#uwg.solarcalcs.SolarCalcs">[docs]</a><span class="k">class</span> <span class="nc">SolarCalcs</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Solar calculations.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        UCM: Urban Canopy - Building Energy Model object.</span>
+<span class="sd">        BEM: Building Energy Model object.</span>
+<span class="sd">        simTime: Simulation time object</span>
+<span class="sd">        RSM: Rural Site &amp; Vertical Diffusion Model Object.</span>
+<span class="sd">        forc: Forcing object.</span>
+<span class="sd">        parameter: Param Object.</span>
+<span class="sd">        rural: Rural road Element object.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * # Properties added from solarcalcs</span>
+<span class="sd">        * dir -- direct sunlight (perpendicular to the sun&#39;s ray)</span>
+<span class="sd">        * dif -- diffuse sunlight</span>
+<span class="sd">        * tanzen -- tangente of solar zenithal angle</span>
+<span class="sd">        * critOrient -- critical canyon angle for which solar radiation reaches the road</span>
+<span class="sd">        * horSol -- direct horizontal radiation</span>
+<span class="sd">        * Kw_term -- fractional terms for wall</span>
+<span class="sd">        * Kr_term -- fractional terms for road</span>
+<span class="sd">        * mr -- fractional terms for wall</span>
+<span class="sd">        * mw -- fractional terms for road</span>
+<span class="sd">        * ut -- elapsed hours on current day</span>
+<span class="sd">        * ad -- fractional year in radians</span>
+<span class="sd">        * eqtime -- time variable</span>
+<span class="sd">        * decsol -- solar declination angle</span>
+<span class="sd">        * zenith -- Angle between normal to earth&#39;s surface and sun position</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">UCM</span><span class="p">,</span> <span class="n">BEM</span><span class="p">,</span> <span class="n">simTime</span><span class="p">,</span> <span class="n">RSM</span><span class="p">,</span> <span class="n">forc</span><span class="p">,</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">rural</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span> <span class="o">=</span> <span class="n">UCM</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span> <span class="o">=</span> <span class="n">BEM</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span> <span class="o">=</span> <span class="n">simTime</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">RSM</span> <span class="o">=</span> <span class="n">RSM</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">forc</span> <span class="o">=</span> <span class="n">forc</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span> <span class="o">=</span> <span class="n">parameter</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rural</span> <span class="o">=</span> <span class="n">rural</span>
+
+<div class="viewcode-block" id="SolarCalcs.solarcalcs"><a class="viewcode-back" href="../../uwg.solarcalcs.html#uwg.solarcalcs.SolarCalcs.solarcalcs">[docs]</a>    <span class="k">def</span> <span class="nf">solarcalcs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Solar Calculation.</span>
+
+<span class="sd">        Mutates RSM, BEM, and UCM objects based on following parameters:</span>
+
+<span class="sd">        * UCM -- Urban Canopy - Building Energy Model object</span>
+<span class="sd">        * BEM -- Building Energy Model object</span>
+<span class="sd">        * simTime -- Simulation time object</span>
+<span class="sd">        * RSM -- Rural Site &amp; Vertical Diffusion Model Object</span>
+<span class="sd">        * forc -- Forcing object</span>
+<span class="sd">        * parameter -- Geo Param Object</span>
+<span class="sd">        * rural -- Rural road Element object</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Direct sunlight (perpendicular to the sun&#39;s ray)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dir</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forc</span><span class="o">.</span><span class="n">dir</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dif</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forc</span><span class="o">.</span><span class="n">dif</span>  <span class="c1"># Diffuse sunlight</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dir</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+
+            <span class="c1"># calculate zenith tangent, and critOrient solar angles</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">solarangles</span><span class="p">()</span>
+
+            <span class="c1"># Direct horizontal radiation</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">zenith</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dir</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+            <span class="c1"># Fractional terms for wall &amp; road</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Kw_term</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="nb">min</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">canAspect</span><span class="o">*</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">critOrient</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">/</span>
+                        <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critOrient</span><span class="p">))),</span> <span class="mf">1.</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Kr_term</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="nb">min</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">critOrient</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span>
+                        <span class="p">(</span><span class="mi">2</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">canAspect</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">critOrient</span><span class="p">))),</span>
+                    <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">canAspect</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">Kw_term</span><span class="p">))</span>
+
+            <span class="c1"># Direct and diffuse solar radiation</span>
+            <span class="c1"># Assume trees are shorter than buildings</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">bldSol</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">Kw_term</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">roadSol</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">Kr_term</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">roadConf</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span>
+
+            <span class="c1"># Solar reflections. Add diffuse radiation from vegetation to alb_road if</span>
+            <span class="c1"># in season</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">month</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegStart</span> <span class="ow">or</span> \
+               <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">month</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegEnd</span><span class="p">:</span>
+                <span class="n">alb_road</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">albedo</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">alb_road</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">albedo</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">vegcoverage</span><span class="p">)</span> <span class="o">+</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">vegcoverage</span>
+
+            <span class="c1"># First set of reflections</span>
+            <span class="n">rr</span> <span class="o">=</span> <span class="n">alb_road</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadSol</span>
+            <span class="n">rw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">alb_wall</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldSol</span>
+
+            <span class="c1"># bounces</span>
+            <span class="n">fr</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="mf">1.</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="mf">2.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">alb_wall</span> <span class="o">+</span>
+                <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">roadConf</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">*</span> <span class="n">alb_road</span> <span class="o">*</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">alb_wall</span><span class="p">)</span>
+
+            <span class="c1"># (1.0-self.UCM.roadConf) road to wall view</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mr</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span> <span class="o">+</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">roadConf</span><span class="p">)</span> <span class="o">*</span> <span class="n">alb_road</span> <span class="o">*</span>
+                       <span class="p">(</span><span class="n">rw</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">alb_wall</span> <span class="o">*</span> <span class="n">rr</span><span class="p">))</span> <span class="o">/</span> <span class="n">fr</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mw</span> <span class="o">=</span> <span class="p">(</span><span class="n">rw</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">alb_wall</span> <span class="o">*</span> <span class="n">rr</span><span class="p">)</span> <span class="o">/</span> <span class="n">fr</span>
+
+            <span class="c1"># Receiving solar, including bounces (W m-2)</span>
+            <span class="c1"># Includes road covered by vegetation.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadSol</span> <span class="o">+</span> \
+                <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">roadConf</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">mw</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">)):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">bldSol</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span><span class="p">)</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">mw</span> <span class="o">+</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">mr</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">rural</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span>  <span class="c1"># Solar received by rural</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoof</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horSol</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">dif</span>  <span class="c1"># Solar received by roof</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">solRec</span>  <span class="c1"># Solar received by road</span>
+            <span class="c1"># Solar received by wall</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecWall</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bldSol</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">wallConf</span><span class="p">)</span> <span class="o">*</span>
+                                   <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">albedo</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadSol</span><span class="p">)</span>
+
+            <span class="c1"># Modification from UWG_Matlab on 09/20:</span>
+            <span class="c1"># Consolidate and incorporate the treeCoverage fraction into the tree</span>
+            <span class="c1"># sensible and latent heat (W-m2) calculation. Previously this was</span>
+            <span class="c1"># factored (inconsistently) at the urbflux and UCMDef.UCModel functions.</span>
+
+            <span class="c1"># Vegetation heat (tree) (per m^2 of veg)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeSensHeat</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">treeFLat</span><span class="p">)</span> <span class="o">*</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeCoverage</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeLatHeat</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">treeFLat</span> <span class="o">*</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeCoverage</span><span class="p">)</span>
+
+            <span class="c1"># Modification from UWG_Matlab on 09/20:</span>
+            <span class="c1"># Add the sensible and latent heat fraction of grass (vegetation not</span>
+            <span class="c1"># accounted for by tree fraction). Note that the self.UCM.road.sens property</span>
+            <span class="c1"># also contains a calculation of sensible heat from vegetation and surface</span>
+            <span class="c1"># convection, but was not used here because the UCModel function in the</span>
+            <span class="c1"># UCMDef module already accounts for the entire road convective heat transfer</span>
+            <span class="c1"># so using the UCM.road.sens property would double-count convection. This</span>
+            <span class="c1"># sensible heat therefore just accounts for the absorbed solar radiation</span>
+            <span class="c1"># split into it&#39;s sensible heat fraction.</span>
+
+            <span class="c1"># Vegetation heat (grass) (per m^2 of veg)</span>
+            <span class="n">grasscover</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">vegcover</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeCoverage</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeSensHeat</span> <span class="o">+=</span> <span class="p">(</span>
+                <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span><span class="p">)</span> <span class="o">*</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">*</span> <span class="n">grasscover</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeLatHeat</span> <span class="o">+=</span> <span class="p">(</span>
+                <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span> <span class="o">*</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">*</span> <span class="n">grasscover</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># No Sun</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rural</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="mf">0.</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">)):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="mf">0.</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="mf">0.</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoad</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># Solar received by road</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecRoof</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># Solar received by roof</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">SolRecWall</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># Solar received by wall</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeSensHeat</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">treeLatHeat</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">rural</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">BEM</span></div>
+
+<div class="viewcode-block" id="SolarCalcs.solarangles"><a class="viewcode-back" href="../../uwg.solarcalcs.html#uwg.solarcalcs.SolarCalcs.solarangles">[docs]</a>    <span class="k">def</span> <span class="nf">solarangles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Solves for zenith angle, tangent of zenithal angle, and critical canyon angle.</span>
+
+<span class="sd">        Calculation based on NOAA from:</span>
+
+<span class="sd">        * canAspect -- aspect Ratio of canyon</span>
+<span class="sd">        * simTime -- simulation time parameters</span>
+<span class="sd">        * RSM.lon -- longitude (deg)</span>
+<span class="sd">        * RSM.lat -- latitude (deg)</span>
+<span class="sd">        * RSM.GMT -- GMT hour correction</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">month</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">month</span>
+        <span class="n">day</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">day</span>
+        <span class="n">secDay</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span>  <span class="c1"># Total elapsed seconds in simulation</span>
+        <span class="c1"># inobis: total days for first of month</span>
+        <span class="c1"># i.e [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]</span>
+        <span class="n">inobis</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">simTime</span><span class="o">.</span><span class="n">inobis</span>
+
+        <span class="n">canAspect</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">UCM</span><span class="o">.</span><span class="n">canAspect</span>
+        <span class="n">lon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">RSM</span><span class="o">.</span><span class="n">lon</span>
+        <span class="n">lat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">RSM</span><span class="o">.</span><span class="n">lat</span>
+        <span class="n">GMT</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">RSM</span><span class="o">.</span><span class="n">gmt</span>
+
+        <span class="c1"># Get elapsed hours on current day</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ut</span> <span class="o">=</span> <span class="p">(</span><span class="mf">24.</span> <span class="o">+</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">secDay</span><span class="p">)</span> <span class="o">/</span> <span class="mf">3600.</span> <span class="o">%</span> <span class="mf">24.</span><span class="p">))</span> <span class="o">%</span> <span class="mf">24.</span>
+        <span class="n">ibis</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inobis</span><span class="p">)))</span>
+
+        <span class="k">for</span> <span class="n">JI</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">):</span>
+            <span class="n">ibis</span><span class="p">[</span><span class="n">JI</span><span class="p">]</span> <span class="o">=</span> <span class="n">inobis</span><span class="p">[</span><span class="n">JI</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="n">date</span> <span class="o">=</span> <span class="n">day</span> <span class="o">+</span> <span class="n">inobis</span><span class="p">[</span><span class="n">month</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>  <span class="c1"># Julian day of the year</span>
+        <span class="c1"># divide circle by 365 days, multiply by elapsed days + hours</span>
+        <span class="c1"># ad: fractional year (radians)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ad</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">365.</span> <span class="o">*</span> <span class="p">(</span><span class="n">date</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ut</span> <span class="o">-</span> <span class="p">(</span><span class="mi">12</span> <span class="o">/</span> <span class="mf">24.</span><span class="p">)))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">eqtime</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="mf">229.18</span> <span class="o">*</span> <span class="p">(</span><span class="mf">0.000075</span> <span class="o">+</span> <span class="mf">0.001868</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.032077</span> <span class="o">*</span>
+                      <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.01461</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.040849</span> <span class="o">*</span>
+                      <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)))</span>
+
+        <span class="c1"># Declination angle (angle of sun with equatorial plane)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">decsol</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="mf">0.006918</span> <span class="o">-</span> <span class="mf">0.399912</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.070257</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">-</span>
+            <span class="mf">0.006758</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.000907</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">-</span>
+            <span class="mf">0.002697</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mf">3.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.00148</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mf">3.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">ad</span><span class="p">))</span>
+
+        <span class="n">time_offset</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">eqtime</span> <span class="o">-</span> <span class="mf">4.</span> <span class="o">*</span> <span class="n">lon</span> <span class="o">+</span> <span class="mi">60</span> <span class="o">*</span> <span class="n">GMT</span>
+        <span class="n">tst</span> <span class="o">=</span> <span class="n">secDay</span> <span class="o">+</span> <span class="n">time_offset</span> <span class="o">*</span> <span class="mi">60</span>
+
+        <span class="n">ha</span> <span class="o">=</span> <span class="p">(</span><span class="n">tst</span> <span class="o">/</span> <span class="mf">4.</span> <span class="o">/</span> <span class="mf">60.</span> <span class="o">-</span> <span class="mf">180.</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">180.</span>
+        <span class="n">zlat</span> <span class="o">=</span> <span class="n">lat</span> <span class="o">*</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mf">180.</span><span class="p">)</span>  <span class="c1"># change angle units to radians</span>
+
+        <span class="c1"># Calculate zenith solar angle</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">zenith</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">math</span><span class="o">.</span><span class="n">acos</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">zlat</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">decsol</span><span class="p">)</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">zlat</span><span class="p">)</span> <span class="o">*</span>
+                      <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">decsol</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">ha</span><span class="p">)))</span>
+
+        <span class="c1"># tangente of solar zenithal angle</span>
+        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">zenith</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-6</span><span class="p">:</span>
+            <span class="k">if</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">zenith</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span> <span class="mf">1e-6</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">zenith</span> <span class="o">&lt;=</span> <span class="mf">0.</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">+</span> <span class="mf">1e-6</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="nb">abs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">zenith</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1e-6</span><span class="p">:</span>
+            <span class="c1"># lim x-&gt;0 tan(x) -&gt; 0 which results in division by zero error</span>
+            <span class="c1"># when calculating the critical canyon angle</span>
+            <span class="c1"># so set tanzen to 1e-6 which will result in critical canyon angle = 90</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span> <span class="o">=</span> <span class="mf">1e-6</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">zenith</span><span class="p">)</span>
+
+        <span class="c1"># critical canyon angle for which solar radiation reaches the road</span>
+        <span class="c1"># has to do with street canyon orientation for given solar angle</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">critOrient</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">asin</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">tanzen</span><span class="p">)</span> <span class="o">/</span> <span class="n">canAspect</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span></div></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

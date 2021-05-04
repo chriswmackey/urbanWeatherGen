@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.uwg module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.weather module" href="uwg.weather.html" />
+    <link rel="prev" title="uwg.utilities module" href="uwg.utilities.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.utilities.html" title="Previous Chapter: uwg.utilities module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.utilities module</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.weather.html" title="Next Chapter: uwg.weather module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.weather module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.uwg.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.uwg">
+<span id="uwg-uwg-module"></span><h1>uwg.uwg module<a class="headerlink" href="#module-uwg.uwg" title="Permalink to this headline">¶</a></h1>
+<p>Urban Weather Generator (UWG) Version 4.2</p>
+<p>Original Author: B. Bueno[1]
+Edited by A. Nakano &amp; Lingfu Zhang
+Modified by Joseph Yang (<a class="reference external" href="mailto:joeyang&#37;&#52;&#48;mit&#46;edu">joeyang<span>&#64;</span>mit<span>&#46;</span>edu</a>) - May, 2016
+Translated to Python by Saeran Vasanthakumar - February, 2018</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Bueno, Bruno; Norford, Leslie; Hidalgo, Julia; Pigeon, Gregoire (2012a).
+The urban weather generator, Journal of Building Performance Simulation. 6:4,269-281.
+doi: 10.1080/19401493.2012.718797</p>
+</div>
+<dl class="py class">
+<dt id="uwg.uwg.UWG">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">uwg.uwg.</span></code><code class="sig-name descname"><span class="pre">UWG</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">epw_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Morph a rural EPW file to urban conditions based on defined urban parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>epw_path</strong> – Text string for full path of the rural .epw file that will be
+morphed. If set to None, other input parameters can be assigned but the UWG
+model cannot be generated from the inputs, which is useful in cases where a
+UWG model needs to be serialized but the file path structure is not known.
+(Default: None).</p></li>
+<li><p><strong>new_epw_dir</strong> – Optional text string for the destination directory into which the
+morphed .epw file is written. If None the morphed file will be written into
+the same directory as the rural .epw file. (Default: None).</p></li>
+<li><p><strong>new_epw_name</strong> – Optional text string for the destination file name of the morphed
+.epw file. If None the morphed file will append ‘_UWG’ to the original file
+name. (Default: None).</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>epw_path – Full path of the rural .epw file that will be morphed.</p></li>
+<li><p>new_epw_path – Full path of the file name of the morphed .epw file.</p></li>
+<li><p>refBEM – Reference BEMDef matrix defined by built type, era, and zone.</p></li>
+<li><p>refSchedule – Reference SchDef matrix defined by built type, era, and zone.</p></li>
+<li><p>month – Number (1-12) representing simulation start month.</p></li>
+<li><p>day – Number (1-31) representing simulation start day.</p></li>
+<li><p>nday – Number of days to simulate.</p></li>
+<li><p>dtsim – Simlation time step in seconds.</p></li>
+<li><p>dtweather – Number for weather data time-step in seconds.</p></li>
+<li><p>autosize – Boolean to set HVAC autosize.</p></li>
+<li><p>sensocc – Sensible heat from occupant [W].</p></li>
+<li><p>latfocc – Latent heat fraction from occupant.</p></li>
+<li><p>radfocc – Radiant heat fraction from occupant.</p></li>
+<li><p>radfequip – Radiant heat fraction from equipment.</p></li>
+<li><p>radflight – Radiant heat fraction from electric light.</p></li>
+<li><p>h_ubl1 – Daytime urban boundary layer height in meters.</p></li>
+<li><p>h_ubl2 – Nighttime urban boundary layer height in meters.</p></li>
+<li><p>h_ref – Inversion height in meters.</p></li>
+<li><p>h_temp – Temperature height in meters.</p></li>
+<li><p>h_wind – Wind height in meters.</p></li>
+<li><p>c_circ – Wind scaling coefficient.</p></li>
+<li><p>c_exch – Exchange velocity coefficient.</p></li>
+<li><p>maxday – Maximum heat flux threshold for daytime conditions [W/m2].</p></li>
+<li><p>maxnight – Maximum heat flux threshold for nighttime conditions [W/m2].</p></li>
+<li><p>windmin – Minimum wind speed in m/s.</p></li>
+<li><p>h_obs – Rural average obstacle height in meters.</p></li>
+<li><p>bldheight – Urban building height in meters.</p></li>
+<li><p>h_mix – Fraction of HVAC waste heat released to street canyon.</p></li>
+<li><p>blddensity – Building footprint density as fraction of urban area.</p></li>
+<li><p>vertohor – Vertical-to-horizontal urban area ratio.</p></li>
+<li><p>charlength – Urban characteristic length in meters.</p></li>
+<li><p>albroad – Urban road albedo.</p></li>
+<li><p>droad – Thickness of urban road pavement thickness in meters.</p></li>
+<li><p>sensanth – Street level anthropogenic sensible heat [W/m2].</p></li>
+<li><p>zone – Index representing an ASHRAE climate zone.</p></li>
+<li><p>grasscover – Fraction of urban ground covered in grass only.</p></li>
+<li><p>treecover – Fraction of urban ground covered in trees.</p></li>
+<li><p>vegstart – Month in which vegetation starts to evapotranspire.</p></li>
+<li><p>vegend – Month in which vegetation stops evapotranspiration.</p></li>
+<li><p>albveg – Vegetation albedo.</p></li>
+<li><p>rurvegcover – Fraction of rural ground covered by vegetation.</p></li>
+<li><p>latgrss – Fraction of latent heat absorbed by urban grass.</p></li>
+<li><p>lattree – Fraction latent heat absorbed by urban trees.</p></li>
+<li><p>schtraffic – Schedule of fractional anthropogenic heat load.</p></li>
+<li><p>kroad – Road pavement conductivity [W/m-K].</p></li>
+<li><p>croad – Road pavement volumetric heat capacity [J/m^3K].</p></li>
+<li><p>bld – Matrix of numbers representing fraction of urban building stock.</p></li>
+<li><p>albroof – Average building roof albedo.</p></li>
+<li><p>vegroof – Fraction of roof covered in grass/shrubs.</p></li>
+<li><p>glzr – Building glazing ratio.</p></li>
+<li><p>albwall – Building albedo.</p></li>
+<li><p>shgc – Building glazing Solar Heat Gain Coefficient (SHGC).</p></li>
+<li><p>flr_h – Building floor height in meters.</p></li>
+<li><p>ref_bem_vector – List of custom BEMDef objects to override the refBEM.</p></li>
+<li><p>ref_sch_vector – List of custom SchDef objects to override the refSchedule.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="uwg.uwg.UWG.ToString">
+<code class="sig-name descname"><span class="pre">ToString</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.ToString"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.ToString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overwrite .NET ToString method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epw_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an UWG object from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – An UWG dictionary following the format below. Note that
+this example has been truncated for the sake of brevity. For
+the full list of required properties in the UWG, see the
+initialization docstrings.</p></li>
+<li><p><strong>epw_path</strong> – Text string for full path of the rural .epw file that will be
+morphed. If set to None, other input parameters can be assigned but the
+UWG model cannot be generated from the inputs, which is useful in cases
+where a UWG model needs to be serialized but the file path structure is
+not known. (Default: None).</p></li>
+<li><p><strong>new_epw_dir</strong> – Optional text string for the destination directory into which
+the morphed .epw file is written. If None the morphed file will be
+written into the same directory as the rural .epw file. (Default: None).</p></li>
+<li><p><strong>new_epw_name</strong> – Optional text string for the destination file name of the
+morphed .epw file. If None the morphed file will append ‘_UWG’ to the
+original file name. (Default: None).</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;UWG&quot;</span><span class="p">,</span>
+<span class="s2">&quot;bldheight&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+<span class="s2">&quot;blddensity&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+<span class="s2">&quot;vertohor&quot;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="s2">&quot;h_obs&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span>
+<span class="s2">&quot;flr_h&quot;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
+<span class="s2">&quot;shgc&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+<span class="c1"># Optional vector of SchDef dictionary.</span>
+<span class="s2">&quot;ref_sch_vector&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">sch</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()]</span>
+<span class="c1"># Optional vector of BEMDef dictionary.</span>
+<span class="s2">&quot;ref_bem_vector&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">bem</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.from_param_args">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_param_args</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bldheight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blddensity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertohor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grasscover</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treecover</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">month</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">day</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">31</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtsim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtweather</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bld</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(('largeoffice',</span> <span class="pre">'pst80',</span> <span class="pre">0.4),</span> <span class="pre">('midriseapartment',</span> <span class="pre">'pst80',</span> <span class="pre">0.6))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">autosize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_mix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensocc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latfocc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radfocc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radfequip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radflight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charlength</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">albroad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">droad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kroad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">croad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1600000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rurvegcover</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegstart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">albveg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latgrss</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lattree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensanth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">schtraffic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">((0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.4,</span> <span class="pre">0.7,</span> <span class="pre">0.9,</span> <span class="pre">0.9,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.7,</span> <span class="pre">0.8,</span> <span class="pre">0.9,</span> <span class="pre">0.9,</span> <span class="pre">0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.7,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2),</span> <span class="pre">(0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.3,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.6,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.5,</span> <span class="pre">0.4,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2),</span> <span class="pre">(0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.3,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.3,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2))</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_ubl1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_ubl2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_ref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_wind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_circ</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c_exch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxday</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxnight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epw_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_bem_vector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_sch_vector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.from_param_args"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.from_param_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an UWG object based on default method arguments.</p>
+<p>The default parameters are set from example parameters defined by Bueno et al.
+(2012a)[1] for Singapore. The original file can be accessed here:
+<a class="reference external" href="https://github.com/ladybug-tools/uwg/blob/master/resources/initialize_singapore.uwg">https://github.com/ladybug-tools/uwg/blob/master/resources/initialize_singapore.uwg</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>[1] Bueno, Bruno; Norford, Leslie; Hidalgo, Julia; Pigeon, Gregoire (2012a).
+The urban weather generator, Journal of Building Performance Simulation. 6:4,
+269-281. doi: 10.1080/19401493.2012.718797</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.from_param_file">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_param_file</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">param_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epw_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_epw_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.from_param_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.from_param_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a UWG object from the .uwg parameter file.</p>
+<p>Note: this method of initializing the UWG object doesn’t permit adding custom
+reference data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param_path</strong> – Optional text string for full path of the the .uwg parameter file
+path.</p></li>
+<li><p><strong>epw_path</strong> – Text string for full path of the rural .epw file that will be
+morphed. If set to None, other input parameters can be assigned but the
+UWG model cannot be generated from the inputs, which is useful in cases
+where a UWG model needs to be serialized but the file path structure is
+not known. (Default: None).</p></li>
+<li><p><strong>new_epw_dir</strong> – Optional text string destination directory for the morphed
+.epw file. If None the morphed file will be written into the same
+directory as the rural .epw file. (Default: None).</p></li>
+<li><p><strong>new_epw_name</strong> – Optional destination file name for the morphed .epw file.
+If None the morphed file will append ‘_UWG’ to the original file name.
+(Default: None).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.generate">
+<code class="sig-name descname"><span class="pre">generate</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.generate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate all UWG objects after input parameters are set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.load_refDOE">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">load_refDOE</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">refDOE_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/runner/work/uwg/uwg/uwg/refdata/readDOE.pkl'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.load_refDOE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.load_refDOE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Static method to deserialize DOE reference data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>readDOE_path</strong> – Text string for full path to the refDOE pickle.</p></li>
+<li><p><strong>(</strong><strong>Default</strong> – the filepath specified in the UWG.REFDOE_PATH constant).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Two 16 x 3 x 16 matrices of reference BEMDef and SchDef objects,
+respectively.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.simulate">
+<code class="sig-name descname"><span class="pre">simulate</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.simulate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulate UWG object and produce urban canyon weather timeseries data.</p>
+<p>This function will set the following attributes in the UWG object:</p>
+<ul class="simple">
+<li><p>N - Total number of hours in simulation</p></li>
+<li><p>ph - Number of simulation time steps per hour</p></li>
+<li><p>dayType - Number representing day type: Sunday, Saturday or Weekday</p></li>
+<li><p>ceil_time_step - sim timestep fitted to weather file timestep</p></li>
+<li><p>solar - SolarCalcs object for current timestep solar calculation</p></li>
+<li><p>WeatherData - N x 1 output vector of forc object instance</p></li>
+<li><p>UCMData - N x 1 output vector of UCM object instance</p></li>
+<li><p>UBLData - N x 1 output vector of UBL object instance</p></li>
+<li><p>RSMData - N x 1 output vector of RSM object instace</p></li>
+<li><p>USMData - N x 1 output vector of USM object instance</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">include_refDOE</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>UWG dictionary representation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>add_refDOE</strong> – Optional boolean to include custom reference BEMDef and SchDef
+objects from the ref_bem_vector and ref_sch_vector attributes.
+(Default: False).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.write_epw">
+<code class="sig-name descname"><span class="pre">write_epw</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/uwg.html#UWG.write_epw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.uwg.UWG.write_epw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write new EPW file to new_epw_path property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.B">
+<code class="sig-name descname"><span class="pre">B</span></code><em class="property"> <span class="pre">=</span> <span class="pre">9.4</span></em><a class="headerlink" href="#uwg.uwg.UWG.B" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.CL">
+<code class="sig-name descname"><span class="pre">CL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">4218.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.CL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.CM">
+<code class="sig-name descname"><span class="pre">CM</span></code><em class="property"> <span class="pre">=</span> <span class="pre">7.4</span></em><a class="headerlink" href="#uwg.uwg.UWG.CM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.COLBURN">
+<code class="sig-name descname"><span class="pre">COLBURN</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1.096474711468775</span></em><a class="headerlink" href="#uwg.uwg.UWG.COLBURN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.CP">
+<code class="sig-name descname"><span class="pre">CP</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1004.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.CP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.CPV">
+<code class="sig-name descname"><span class="pre">CPV</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1846.1</span></em><a class="headerlink" href="#uwg.uwg.UWG.CPV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.CURRENT_PATH">
+<code class="sig-name descname"><span class="pre">CURRENT_PATH</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'/home/runner/work/uwg/uwg/uwg'</span></em><a class="headerlink" href="#uwg.uwg.UWG.CURRENT_PATH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.DEFAULT_BLD">
+<code class="sig-name descname"><span class="pre">DEFAULT_BLD</span></code><em class="property"> <span class="pre">=</span> <span class="pre">(('largeoffice',</span> <span class="pre">'pst80',</span> <span class="pre">0.4),</span> <span class="pre">('midriseapartment',</span> <span class="pre">'pst80',</span> <span class="pre">0.6))</span></em><a class="headerlink" href="#uwg.uwg.UWG.DEFAULT_BLD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.DEFAULT_SCHTRAFFIC">
+<code class="sig-name descname"><span class="pre">DEFAULT_SCHTRAFFIC</span></code><em class="property"> <span class="pre">=</span> <span class="pre">((0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.4,</span> <span class="pre">0.7,</span> <span class="pre">0.9,</span> <span class="pre">0.9,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.6,</span> <span class="pre">0.7,</span> <span class="pre">0.8,</span> <span class="pre">0.9,</span> <span class="pre">0.9,</span> <span class="pre">0.8,</span> <span class="pre">0.8,</span> <span class="pre">0.7,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2),</span> <span class="pre">(0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.3,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.5,</span> <span class="pre">0.6,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.7,</span> <span class="pre">0.5,</span> <span class="pre">0.4,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2),</span> <span class="pre">(0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.2,</span> <span class="pre">0.3,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.4,</span> <span class="pre">0.3,</span> <span class="pre">0.3,</span> <span class="pre">0.2,</span> <span class="pre">0.2))</span></em><a class="headerlink" href="#uwg.uwg.UWG.DEFAULT_SCHTRAFFIC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.ESTT">
+<code class="sig-name descname"><span class="pre">ESTT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">611.14</span></em><a class="headerlink" href="#uwg.uwg.UWG.ESTT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.G">
+<code class="sig-name descname"><span class="pre">G</span></code><em class="property"> <span class="pre">=</span> <span class="pre">9.81</span></em><a class="headerlink" href="#uwg.uwg.UWG.G" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.LV">
+<code class="sig-name descname"><span class="pre">LV</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2260000.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.LV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.LVTT">
+<code class="sig-name descname"><span class="pre">LVTT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2500800.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.LVTT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.MAXTHICKNESS">
+<code class="sig-name descname"><span class="pre">MAXTHICKNESS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0.05</span></em><a class="headerlink" href="#uwg.uwg.UWG.MAXTHICKNESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.MINTHICKNESS">
+<code class="sig-name descname"><span class="pre">MINTHICKNESS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0.01</span></em><a class="headerlink" href="#uwg.uwg.UWG.MINTHICKNESS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.OPTIONAL_PARAMETER_SET">
+<code class="sig-name descname"><span class="pre">OPTIONAL_PARAMETER_SET</span></code><em class="property"> <span class="pre">=</span> <span class="pre">{'albroof',</span> <span class="pre">'albwall',</span> <span class="pre">'flr_h',</span> <span class="pre">'glzr',</span> <span class="pre">'shgc',</span> <span class="pre">'vegroof'}</span></em><a class="headerlink" href="#uwg.uwg.UWG.OPTIONAL_PARAMETER_SET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.PARAMETER_LIST">
+<code class="sig-name descname"><span class="pre">PARAMETER_LIST</span></code><em class="property"> <span class="pre">=</span> <span class="pre">('month',</span> <span class="pre">'day',</span> <span class="pre">'nday',</span> <span class="pre">'dtsim',</span> <span class="pre">'dtweather',</span> <span class="pre">'autosize',</span> <span class="pre">'sensocc',</span> <span class="pre">'latfocc',</span> <span class="pre">'radfocc',</span> <span class="pre">'radfequip',</span> <span class="pre">'radflight',</span> <span class="pre">'h_ubl1',</span> <span class="pre">'h_ubl2',</span> <span class="pre">'h_ref',</span> <span class="pre">'h_temp',</span> <span class="pre">'h_wind',</span> <span class="pre">'c_circ',</span> <span class="pre">'c_exch',</span> <span class="pre">'maxday',</span> <span class="pre">'maxnight',</span> <span class="pre">'windmin',</span> <span class="pre">'h_obs',</span> <span class="pre">'bldheight',</span> <span class="pre">'h_mix',</span> <span class="pre">'blddensity',</span> <span class="pre">'vertohor',</span> <span class="pre">'charlength',</span> <span class="pre">'albroad',</span> <span class="pre">'droad',</span> <span class="pre">'sensanth',</span> <span class="pre">'zone',</span> <span class="pre">'grasscover',</span> <span class="pre">'treecover',</span> <span class="pre">'vegstart',</span> <span class="pre">'vegend',</span> <span class="pre">'albveg',</span> <span class="pre">'rurvegcover',</span> <span class="pre">'latgrss',</span> <span class="pre">'lattree',</span> <span class="pre">'schtraffic',</span> <span class="pre">'kroad',</span> <span class="pre">'croad',</span> <span class="pre">'bld',</span> <span class="pre">'shgc',</span> <span class="pre">'albroof',</span> <span class="pre">'glzr',</span> <span class="pre">'vegroof',</span> <span class="pre">'albwall',</span> <span class="pre">'flr_h')</span></em><a class="headerlink" href="#uwg.uwg.UWG.PARAMETER_LIST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.R">
+<code class="sig-name descname"><span class="pre">R</span></code><em class="property"> <span class="pre">=</span> <span class="pre">287.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.R" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.REFDOE_PATH">
+<code class="sig-name descname"><span class="pre">REFDOE_PATH</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'/home/runner/work/uwg/uwg/uwg/refdata/readDOE.pkl'</span></em><a class="headerlink" href="#uwg.uwg.UWG.REFDOE_PATH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.RV">
+<code class="sig-name descname"><span class="pre">RV</span></code><em class="property"> <span class="pre">=</span> <span class="pre">461.5</span></em><a class="headerlink" href="#uwg.uwg.UWG.RV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.SIGMA">
+<code class="sig-name descname"><span class="pre">SIGMA</span></code><em class="property"> <span class="pre">=</span> <span class="pre">5.67e-08</span></em><a class="headerlink" href="#uwg.uwg.UWG.SIGMA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.SOIL">
+<code class="sig-name descname"><span class="pre">SOIL</span></code><em class="property"> <span class="pre">=</span> <span class="pre">Material,</span> <span class="pre">name:</span> <span class="pre">soil</span>&#160; <span class="pre">thermalcond:</span> <span class="pre">1</span>&#160; <span class="pre">volheat:</span> <span class="pre">2000000.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.SOIL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.SOILTCOND">
+<code class="sig-name descname"><span class="pre">SOILTCOND</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#uwg.uwg.UWG.SOILTCOND" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.SOILVOLHEAT">
+<code class="sig-name descname"><span class="pre">SOILVOLHEAT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">2000000.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.SOILVOLHEAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.TT">
+<code class="sig-name descname"><span class="pre">TT</span></code><em class="property"> <span class="pre">=</span> <span class="pre">273.16</span></em><a class="headerlink" href="#uwg.uwg.UWG.TT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.VK">
+<code class="sig-name descname"><span class="pre">VK</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0.4</span></em><a class="headerlink" href="#uwg.uwg.UWG.VK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.WATERDENS">
+<code class="sig-name descname"><span class="pre">WATERDENS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">1000.0</span></em><a class="headerlink" href="#uwg.uwg.UWG.WATERDENS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.WGMAX">
+<code class="sig-name descname"><span class="pre">WGMAX</span></code><em class="property"> <span class="pre">=</span> <span class="pre">0.005</span></em><a class="headerlink" href="#uwg.uwg.UWG.WGMAX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.uwg.UWG.Z_MESO_PATH">
+<code class="sig-name descname"><span class="pre">Z_MESO_PATH</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'/home/runner/work/uwg/uwg/uwg/refdata/z_meso.txt'</span></em><a class="headerlink" href="#uwg.uwg.UWG.Z_MESO_PATH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.albroad">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">albroad</span></code><a class="headerlink" href="#uwg.uwg.UWG.albroad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set urban road albedo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.albroof">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">albroof</span></code><a class="headerlink" href="#uwg.uwg.UWG.albroof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average building roof albedo.</p>
+<p>If value is None, a unique albroof is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.albveg">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">albveg</span></code><a class="headerlink" href="#uwg.uwg.UWG.albveg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set vegetation albedo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.albwall">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">albwall</span></code><a class="headerlink" href="#uwg.uwg.UWG.albwall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average building albedo.</p>
+<p>If value is None, a unique albwall is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.autosize">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">autosize</span></code><a class="headerlink" href="#uwg.uwg.UWG.autosize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set boolean to autosize HVAC system.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.bld">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">bld</span></code><a class="headerlink" href="#uwg.uwg.UWG.bld" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set list of building types, eras, and fractions of urban building stock.</p>
+<p>This property consists of a list of tuples, each containing a string for the the
+built era, and a number between 0 and 1, inclusive, defining built stock
+fraction, i.e (‘LargeOffice’, ‘New’, 0.4). The fractions should sum to one.</p>
+<p>768 predefined models are built referencing 16 building types for 3 built eras
+and 16 climate zones according to models from the Department of Energy (DOE).
+Choose from the following text identifiers to reference a DOE building type:</p>
+<ul class="simple">
+<li><p>‘fullservicerestaurant’</p></li>
+<li><p>‘hospital’</p></li>
+<li><p>‘largehotel’</p></li>
+<li><p>‘largeoffice’</p></li>
+<li><p>‘medoffice’</p></li>
+<li><p>‘midriseapartment’</p></li>
+<li><p>‘outpatient’</p></li>
+<li><p>‘primaryschool’</p></li>
+<li><p>‘quickservicerestaurant’</p></li>
+<li><p>‘secondaryschool’</p></li>
+<li><p>‘smallhotel’</p></li>
+<li><p>‘smalloffice’</p></li>
+<li><p>‘standaloneretail’</p></li>
+<li><p>‘stripmall’</p></li>
+<li><p>‘supermarket’</p></li>
+<li><p>‘warehouse’</p></li>
+</ul>
+<p>Choose from the following built eras:</p>
+<ul class="simple">
+<li><p>‘pre80’</p></li>
+<li><p>‘pst80’</p></li>
+<li><p>‘new’</p></li>
+</ul>
+<p>Custom building types can also be referenced in this property. For example, a
+built stock consisting of 40% post-1980’s large office, 30% new midrise
+apartment, and 30% of a pre-1980s custom building type (defined by the user)
+is referenced as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bld</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;largeoffice&#39;</span><span class="p">,</span> <span class="s1">&#39;pst80&#39;</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;midriseapartment&#39;</span><span class="p">,</span> <span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span>
+       <span class="p">(</span><span class="s1">&#39;custombuilding&#39;</span><span class="p">,</span> <span class="s1">&#39;pre80&#39;</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.blddensity">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">blddensity</span></code><a class="headerlink" href="#uwg.uwg.UWG.blddensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set building footprint density as fraction of urban area.</p>
+<p>The sum of blddensity, grasscover and treecover must be less than or equal to 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.bldheight">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">bldheight</span></code><a class="headerlink" href="#uwg.uwg.UWG.bldheight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average urban building height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.c_circ">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">c_circ</span></code><a class="headerlink" href="#uwg.uwg.UWG.c_circ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set wind scaling coefficient.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.c_exch">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">c_exch</span></code><a class="headerlink" href="#uwg.uwg.UWG.c_exch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set exchange velocity coefficient.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.charlength">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">charlength</span></code><a class="headerlink" href="#uwg.uwg.UWG.charlength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the urban characteristic length in meters.</p>
+<p>The characteristic length is the dimension of a square that encompasses the
+whole neighborhood.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.croad">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">croad</span></code><a class="headerlink" href="#uwg.uwg.UWG.croad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set road pavement volumetric heat capacity [J/m^3K].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.day">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">day</span></code><a class="headerlink" href="#uwg.uwg.UWG.day" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set number (1-31) as simulation start day.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.droad">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">droad</span></code><a class="headerlink" href="#uwg.uwg.UWG.droad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set thickness of urban road pavement thickness in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.dtsim">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">dtsim</span></code><a class="headerlink" href="#uwg.uwg.UWG.dtsim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set simulation timestep in seconds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.dtweather">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">dtweather</span></code><a class="headerlink" href="#uwg.uwg.UWG.dtweather" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set weather data timestep in seconds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.epw_path">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">epw_path</span></code><a class="headerlink" href="#uwg.uwg.UWG.epw_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get full path to rural .epw file to be morphed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.flr_h">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">flr_h</span></code><a class="headerlink" href="#uwg.uwg.UWG.flr_h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average building floor height in meters.</p>
+<p>If value is None, a unique flr_h is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.glzr">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">glzr</span></code><a class="headerlink" href="#uwg.uwg.UWG.glzr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average building glazing ratio.</p>
+<p>If value is None, a unique glzr is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.grasscover">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">grasscover</span></code><a class="headerlink" href="#uwg.uwg.UWG.grasscover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of urban area covered exclusively in grass.</p>
+<p>This value does not including grass under trees. The sum of blddensity,
+grasscover and treecover must be less than or equal to 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_mix">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_mix</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_mix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of building HVAC waste heat released to street canyon.</p>
+<p>It is assumed the rest of building HVAC waste heat is released from the roof.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_obs">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_obs</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_obs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set rural average obstacle height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_ref">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_ref</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_ref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set inversion height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_temp">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_temp</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_temp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set temperature height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_ubl1">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_ubl1</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_ubl1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set daytime urban boundary layer height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_ubl2">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_ubl2</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_ubl2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set nighttime urban boundary layer height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.h_wind">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">h_wind</span></code><a class="headerlink" href="#uwg.uwg.UWG.h_wind" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set wind height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.kroad">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">kroad</span></code><a class="headerlink" href="#uwg.uwg.UWG.kroad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set road pavement conductivity [W/mK].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.latfocc">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">latfocc</span></code><a class="headerlink" href="#uwg.uwg.UWG.latfocc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set latent heat fraction from occupant.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.latgrss">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">latgrss</span></code><a class="headerlink" href="#uwg.uwg.UWG.latgrss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of latent heat absorbed by urban grass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.lattree">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">lattree</span></code><a class="headerlink" href="#uwg.uwg.UWG.lattree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of latent heat absorbed by urban trees.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.maxday">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">maxday</span></code><a class="headerlink" href="#uwg.uwg.UWG.maxday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set maximum heat flux threshold for daytime conditions [W/m].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.maxnight">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">maxnight</span></code><a class="headerlink" href="#uwg.uwg.UWG.maxnight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set maximum heat flux threshold for nighttime conditions [W/m2].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.month">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">month</span></code><a class="headerlink" href="#uwg.uwg.UWG.month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set number (1-12) as simulation start month.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.nday">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nday</span></code><a class="headerlink" href="#uwg.uwg.UWG.nday" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set number of days to simulate.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.new_epw_path">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">new_epw_path</span></code><a class="headerlink" href="#uwg.uwg.UWG.new_epw_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get text string for new epw filepath.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.radfequip">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">radfequip</span></code><a class="headerlink" href="#uwg.uwg.UWG.radfequip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set radiant heat fraction from equipment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.radflight">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">radflight</span></code><a class="headerlink" href="#uwg.uwg.UWG.radflight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set radiant heat fraction from electric light.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.radfocc">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">radfocc</span></code><a class="headerlink" href="#uwg.uwg.UWG.radfocc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set radiant heat fraction from occupant.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.refBEM">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">refBEM</span></code><a class="headerlink" href="#uwg.uwg.UWG.refBEM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get matrix of DOE reference BEMDefs defined by built type, era, and zone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.refSchedule">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">refSchedule</span></code><a class="headerlink" href="#uwg.uwg.UWG.refSchedule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get matrix of DOE reference SchDefs defined by built type, era, and zone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.ref_bem_vector">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ref_bem_vector</span></code><a class="headerlink" href="#uwg.uwg.UWG.ref_bem_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of custom BEMDef objects to add to refBEM.</p>
+<p>If value is None, all BEMDef objects are referenced from the DOE typologies
+defined by default in the refBEM matrix. (Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.ref_sch_vector">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ref_sch_vector</span></code><a class="headerlink" href="#uwg.uwg.UWG.ref_sch_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get list of custom SchDef objects to add to refSchedule.</p>
+<p>If value is None, all SchDef objects are referenced from the DOE typologies
+defined by default in the refSch matrix. (Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.rurvegcover">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">rurvegcover</span></code><a class="headerlink" href="#uwg.uwg.UWG.rurvegcover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of rural ground covered by vegetation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.schtraffic">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">schtraffic</span></code><a class="headerlink" href="#uwg.uwg.UWG.schtraffic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set matrix for schedule of fractional anthropogenic heat load.</p>
+<p>This property consists of a 3 x 24 matrix. Each row corresponding to a schedule
+for a weekday, Saturday, and Sunday, and each column corresponds to an hour in
+the day, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Weekday schedule</span>
+<span class="n">wkday</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span>
+         <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
+<span class="c1"># Saturday schedule</span>
+<span class="n">satday</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span>
+         <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
+<span class="c1"># Sunday schedule</span>
+<span class="n">sunday</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span>
+         <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">]</span>
+
+<span class="n">schtraffic</span> <span class="o">=</span> <span class="p">[</span><span class="n">wkday</span><span class="p">,</span> <span class="n">satday</span><span class="p">,</span> <span class="n">sunday</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.sensanth">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sensanth</span></code><a class="headerlink" href="#uwg.uwg.UWG.sensanth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set street level anthropogenic sensible heat [W/m2].</p>
+<p>Street level anthropogenic heat is non-building heat like heat emitted from cars,
+pedestrians, and street cooking.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.sensocc">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sensocc</span></code><a class="headerlink" href="#uwg.uwg.UWG.sensocc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set sensible heat from occupant [W].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.shgc">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">shgc</span></code><a class="headerlink" href="#uwg.uwg.UWG.shgc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set average building glazing Solar Heat Gain Coefficient.</p>
+<p>If value is None, a unique shgc is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.treecover">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">treecover</span></code><a class="headerlink" href="#uwg.uwg.UWG.treecover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of urban area covered in trees.</p>
+<p>The sum of blddensity, grasscover and treecover must be less than or equal to 1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.vegcover">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vegcover</span></code><a class="headerlink" href="#uwg.uwg.UWG.vegcover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get fraction of urban ground covered by trees and grass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.vegend">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vegend</span></code><a class="headerlink" href="#uwg.uwg.UWG.vegend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set value from 1 to 12 for month at which vegetation stops evapotranspiration.</p>
+<p>This month corresponds to when the leaves of vegetation are assumed to fall.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.vegroof">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vegroof</span></code><a class="headerlink" href="#uwg.uwg.UWG.vegroof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of roofs covered in grass/shrubs.</p>
+<p>If value is None, a unique vegroof is set for each building from the refBEM.
+(Default: None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.vegstart">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vegstart</span></code><a class="headerlink" href="#uwg.uwg.UWG.vegstart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set value from 1 to 12 for month at which vegetation starts to evapotranspire.</p>
+<p>This month corresponds to when the leaves of vegetation are assumed to be out.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.vertohor">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vertohor</span></code><a class="headerlink" href="#uwg.uwg.UWG.vertohor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set vertical-to-horizontal urban area ratio.</p>
+<p>The vertical-to-horizontal urban area ratio is calculated by dividing the
+urban facade area by total urban area.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.windmin">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">windmin</span></code><a class="headerlink" href="#uwg.uwg.UWG.windmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set minimum wind speed in m/s.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.uwg.UWG.zone">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">zone</span></code><a class="headerlink" href="#uwg.uwg.UWG.zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set text representing an ASHRAE climate zone.</p>
+<p>This value is used to specify climate zone-specific construction, and
+HVAC parameters for the DOE reference building types. This will not effect
+the simulation if only custom reference buildings are used.</p>
+<p>Choose from the following:</p>
+<ul class="simple">
+<li><p>‘1A’ - (i.e Miami)</p></li>
+<li><p>‘2A’ - (i.e Houston)</p></li>
+<li><p>‘2B’ - (i.e Phoenix)</p></li>
+<li><p>‘3A’ - (i.e Atlanta)</p></li>
+<li><p>‘3B-CA’ - (i.e Los Angeles)</p></li>
+<li><p>‘3B’ - (i.e Las Vegas)</p></li>
+<li><p>‘3C’ - (i.e San Francisco)</p></li>
+<li><p>‘4A’ - (i.e Baltimore)</p></li>
+<li><p>‘4B’ - (i.e Albuquerque)</p></li>
+<li><p>‘4C’ - (i.e Seattle)</p></li>
+<li><p>‘5A’ - (i.e Chicago)</p></li>
+<li><p>‘5B’ - (i.e Boulder)</p></li>
+<li><p>‘6A’ - (i.e Minneapolis)</p></li>
+<li><p>‘6B’ - (i.e Helena)</p></li>
+<li><p>‘7’ - (i.e Duluth)</p></li>
+<li><p>‘8’ - (i.e Fairbanks)</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.param module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.psychrometrics module" href="uwg.psychrometrics.html" />
+    <link rel="prev" title="uwg.material module" href="uwg.material.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.material.html" title="Previous Chapter: uwg.material module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.material module</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.psychrometrics.html" title="Next Chapter: uwg.psychrometrics module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.psychrome... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.param.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.param">
+<span id="uwg-param-module"></span><h1>uwg.param module<a class="headerlink" href="#module-uwg.param" title="Permalink to this headline">¶</a></h1>
+<p>Geographic Parameters class.</p>
+<dl class="py class">
+<dt id="uwg.param.Param">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">uwg.param.</span></code><code class="sig-name descname"><span class="pre">Param</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dayBLHeight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nightBLHeight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refHeight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tempHeight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windHeight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circCoeff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dayThreshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nightThreshold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">treeFLat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grassFLat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegAlbedo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegStart</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegEnd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nightSetStart</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nightSetEnd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windMin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wgmax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exCoeff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxdx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vk</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waterDens</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lvtt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">estt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cpv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colburn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/param.html#Param"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.param.Param" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Geographic Parameters class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dayBLHeight</strong> – Daytime mixing height [orig: 700] [m].</p></li>
+<li><p><strong>nightBLHeight</strong> – Nighttime boundary-layer height
+(orig: 80, Sing: 80, Bub-Cap: 50) [m]</p></li>
+<li><p><strong>refHeight</strong> – Reference height at which the vertical profile of potential
+temperature is vertical</p></li>
+<li><p><strong>tempHeight</strong> – Temperature measuremnt height at the weather station [m]</p></li>
+<li><p><strong>windHeight</strong> – Air velocity measuremnt height at the weather station [m]</p></li>
+<li><p><strong>circCoeff</strong> – Wind scaling coefficient</p></li>
+<li><p><strong>dayThreshold</strong> – Heat flux threshold for daytime conditions [W m-2]</p></li>
+<li><p><strong>nightThreshold</strong> – Heat flux threshold for nighttime conditions [W m-2]</p></li>
+<li><p><strong>treeFLat</strong> – Value between 0 and 1 for latent fraction of trees</p></li>
+<li><p><strong>grassFLat</strong> – Value between 0 and 1 for latent fraction of grass</p></li>
+<li><p><strong>vegAlbedo</strong> – Value between 0 and 1 for albedo of vegetation</p></li>
+<li><p><strong>vegStart</strong> – Value between 1 and 12 for begin month for vegetation participation</p></li>
+<li><p><strong>vegEnd</strong> – Value between 1 and 12 for end month for vegetation participation</p></li>
+<li><p><strong>nightSetStart</strong> – Begin hour for night thermal set point schedule</p></li>
+<li><p><strong>nightSetEnd</strong> – End hour for night thermal set point schedule</p></li>
+<li><p><strong>windMin</strong> – Minimum wind speed [m s-1]</p></li>
+<li><p><strong>wgmax</strong> – Maximum film water depth on horizontal surfaces [m]</p></li>
+<li><p><strong>exCoeff</strong> – Exchange velocity coefficient</p></li>
+<li><p><strong>maxdx</strong> – Maximum discretization length for the UBL model [m]</p></li>
+<li><p><strong>g</strong> – Gravity [m s-2]</p></li>
+<li><p><strong>cp</strong> – Heat capacity for air [J/kg K]</p></li>
+<li><p><strong>vk</strong> – Von karman constant [dimensionless]</p></li>
+<li><p><strong>r</strong> – Gas constant for dry air [J/kg K]</p></li>
+<li><p><strong>rv</strong> – Gas constant for water vapor [J/kg K]</p></li>
+<li><p><strong>lv</strong> – Latent heat of evaporation [J/kg]</p></li>
+<li><p><strong>pi</strong> – Pi</p></li>
+<li><p><strong>sigma</strong> – Stefan Boltzmann constant [W K-4 m-2]</p></li>
+<li><p><strong>waterDens</strong> – Water density [kg m-3]</p></li>
+<li><p><strong>lvtt</strong> – Undefined.</p></li>
+<li><p><strong>tt</strong> – Undefined.</p></li>
+<li><p><strong>estt</strong> – Undefined.</p></li>
+<li><p><strong>cl</strong> – Undefined.</p></li>
+<li><p><strong>cpv</strong> – Undefined.</p></li>
+<li><p><strong>b</strong> – Coefficients derived by Louis [1979]</p></li>
+<li><p><strong>cm</strong> – Undefined.</p></li>
+<li><p><strong>colburn</strong> – [Pr/Sc]^[2/3] for Colburn analogy in water evaporation</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>dayBLHeight</p></li>
+<li><p>nightBLHeight</p></li>
+<li><p>refHeight</p></li>
+<li><p>tempHeight</p></li>
+<li><p>windHeight</p></li>
+<li><p>circCoeff</p></li>
+<li><p>dayThreshold</p></li>
+<li><p>nightThreshold</p></li>
+<li><p>treeFLat</p></li>
+<li><p>grassFLat</p></li>
+<li><p>vegAlbedo</p></li>
+<li><p>vegStart</p></li>
+<li><p>vegEnd</p></li>
+<li><p>nightSetStart</p></li>
+<li><p>nightSetEnd</p></li>
+<li><p>windMin</p></li>
+<li><p>wgmax</p></li>
+<li><p>exCoeff</p></li>
+<li><p>maxdx</p></li>
+<li><p>g</p></li>
+<li><p>cp</p></li>
+<li><p>vk</p></li>
+<li><p>r</p></li>
+<li><p>rv</p></li>
+<li><p>lv</p></li>
+<li><p>pi</p></li>
+<li><p>sigma</p></li>
+<li><p>waterDens</p></li>
+<li><p>lvtt</p></li>
+<li><p>tt</p></li>
+<li><p>estt</p></li>
+<li><p>cl</p></li>
+<li><p>cpv</p></li>
+<li><p>b</p></li>
+<li><p>cm</p></li>
+<li><p>colburn</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

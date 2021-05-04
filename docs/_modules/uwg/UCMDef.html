@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.UCMDef &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.UCMDef</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Class for Urban Canopy Model.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">range</span> <span class="o">=</span> <span class="n">xrange</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span><span class="p">,</span> <span class="nb">pow</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+
+
+<div class="viewcode-block" id="UCMDef"><a class="viewcode-back" href="../../uwg.UCMDef.html#uwg.UCMDef.UCMDef">[docs]</a><span class="k">class</span> <span class="nc">UCMDef</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Definition of Urban Canopy - Building Energy Model Class</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bldHeight: Average building height (m).</span>
+<span class="sd">        bldDensity: Horizontal building density (footprint/total_area).</span>
+<span class="sd">        verToHor: Vertical-to-horizontal urban area ratio (facade area/urban area).</span>
+<span class="sd">        treeCoverage: Horizontal tree density (footprint).</span>
+<span class="sd">        sensAnthrop: Sensible anthropogenic heat (other than from buildings) (W m-2).</span>
+<span class="sd">        latAnthrop: Latent anthropogenic heat (other than from buildings) (W m-2).</span>
+<span class="sd">        initialTemp: Canyon air temperature (db) (K).</span>
+<span class="sd">        initialHum: Canyon specific humidity (kg kg-1).</span>
+<span class="sd">        initialWind: Urban canyon wind velocity (m s-1).</span>
+<span class="sd">        parameter: Param object.</span>
+<span class="sd">        r_glaze: Area-weighted average of glazing ratio from urban building stock.</span>
+<span class="sd">        SHGC: Area-weighted average of SHGC from urban building stock.</span>
+<span class="sd">        alb_wall: Area-weighted average of wall albedo from urban building stock.</span>
+<span class="sd">        road: Road element class (moved from BEM).</span>
+
+<span class="sd">    Properties</span>
+<span class="sd">        * road -- Road element class (moved from BEM)</span>
+<span class="sd">        * # Urban Canyon Parameters</span>
+<span class="sd">        * bldHeight -- average building height (m)</span>
+<span class="sd">        * bldDensity -- horizontal building density (footprint)</span>
+<span class="sd">        * verToHor -- vertical-to-horizontal urban area ratio (facade area/urban area)</span>
+<span class="sd">        * treeCoverage -- horizontal tree density (footprint)</span>
+<span class="sd">        * sensAnthrop -- sensible anthropogenic heat (other than from buildings) (W m-2)</span>
+<span class="sd">        * latAnthrop -- latent anthropogenic heat (other than from buildings) (W m-2)</span>
+<span class="sd">        * z0u -- urban roughness length (m)</span>
+<span class="sd">        * l_disp -- urban displacement length (m)</span>
+<span class="sd">        * roadShad -- shadowing of roads</span>
+<span class="sd">        * canWidth -- canyon width (m)</span>
+<span class="sd">        * bldWidth -- bld width (m)</span>
+<span class="sd">        * canAspect -- canyon aspect ratio</span>
+<span class="sd">        * roadConf -- road-sky configuration factors (sky view factor)</span>
+<span class="sd">        * alb_wall -- average wall albedo</span>
+<span class="sd">        * wallConf -- wall-sky configuration factors (sky view factor)</span>
+<span class="sd">        * VFwallroad -- wall-road view factor</span>
+<span class="sd">        * VFroadwall -- road-wall view factor</span>
+<span class="sd">        * facArea -- facade area (m2)</span>
+<span class="sd">        * roadArea -- road area (m2)</span>
+<span class="sd">        * roofArea -- roof area (m2) (also building area)</span>
+<span class="sd">        * facAbsor -- average facade absortivity</span>
+<span class="sd">        * roadAbsor -- average road absortivity</span>
+<span class="sd">        * h_mix -- waste heat mix into canyon ratio</span>
+<span class="sd">        * # Urban Canyon Variables</span>
+<span class="sd">        * canTemp -- canyon air temperature (db) (K)</span>
+<span class="sd">        * Tdp -- dew point temperature</span>
+<span class="sd">        * Twb -- wetbulb temperature</span>
+<span class="sd">        * canHum -- canyon specific humidity (kg kg-1)</span>
+<span class="sd">        * canRHum -- canyon relative humidity ()</span>
+<span class="sd">        * canWind -- urban canyon wind velocity (m s-1)</span>
+<span class="sd">        * turbU -- canyon turbulent velocities (m s-1)</span>
+<span class="sd">        * turbV --  canyon turbulent velocities (m s-1)</span>
+<span class="sd">        * turbW -- canyon turbulent velocities (m s-1)</span>
+<span class="sd">        * ublTemp -- urban boundary layer temperature (K)</span>
+<span class="sd">        * ublTempdx -- urban boundary layer temperature discretization (K)</span>
+<span class="sd">        * ublWind -- urban boundary layer wind velocity (m s-1)</span>
+<span class="sd">        * ustar -- friction velocity (m s-1)</span>
+<span class="sd">        * ustarMod -- modified friction velocity (m s-1)</span>
+<span class="sd">        * uExch -- exchange velocity (m s-1)</span>
+<span class="sd">        * treeLatHeat -- latent heat from trees (W m-2)</span>
+<span class="sd">        * treeSensHeat -- sensible heat from trees (W m-2)</span>
+<span class="sd">        * sensHeat -- urban sensible heat (W m-2)</span>
+<span class="sd">        * latHeat -- urban latent heat (W m-2)</span>
+<span class="sd">        * windProf -- urban wind profile</span>
+<span class="sd">        * Q_roof -- sensible heat flux from building roof (convective)</span>
+<span class="sd">        * Q_wall -- sensible heat flux from building wall (convective)</span>
+<span class="sd">        * Q_window -- sensible heat flux from building window (via U-factor)</span>
+<span class="sd">        * Q_road -- sensible heat flux from road (convective)</span>
+<span class="sd">        * Q_hvac -- sensible heat flux from HVAC waste</span>
+<span class="sd">        * Q_traffic -- sensible heat flux from traffic (net)</span>
+<span class="sd">        * Q_ubl -- Convective heat exchange with UBL layer</span>
+<span class="sd">        * Q_vent -- Convective heat exchange from ventilation/infiltration</span>
+<span class="sd">        * SolRecWall -- Solar received by wall</span>
+<span class="sd">        * SolRecRoof -- Solar received by roof</span>
+<span class="sd">        * SolRecRoad -- Solar received by road</span>
+<span class="sd">        * roadTemp -- average road temperature (K)</span>
+<span class="sd">        * roofTemp -- average roof temperature (K)</span>
+<span class="sd">        * wallTemp -- average wall temperature (K)</span>
+<span class="sd">        * ElecTotal -- Total Electricity consumption of urban area</span>
+<span class="sd">        * GasTotal -- Total Gas consumption of the urban area</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bldHeight</span><span class="p">,</span> <span class="n">bldDensity</span><span class="p">,</span> <span class="n">verToHor</span><span class="p">,</span> <span class="n">treeCoverage</span><span class="p">,</span> <span class="n">sensAnthrop</span><span class="p">,</span>
+                 <span class="n">latAnthrop</span><span class="p">,</span> <span class="n">initialTemp</span><span class="p">,</span> <span class="n">initialHum</span><span class="p">,</span> <span class="n">initialWind</span><span class="p">,</span> <span class="n">parameter</span><span class="p">,</span>
+                 <span class="n">r_glaze</span><span class="p">,</span> <span class="n">SHGC</span><span class="p">,</span> <span class="n">alb_wall</span><span class="p">,</span> <span class="n">road</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">road</span> <span class="o">=</span> <span class="n">road</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span> <span class="o">=</span> <span class="n">bldHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">verToHor</span> <span class="o">=</span> <span class="n">verToHor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span> <span class="o">=</span> <span class="n">bldDensity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">treeCoverage</span> <span class="o">=</span> <span class="n">treeCoverage</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vegcover</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">vegcoverage</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensAnthrop</span> <span class="o">=</span> <span class="n">sensAnthrop</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">latAnthrop</span> <span class="o">=</span> <span class="n">latAnthrop</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roadShad</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">treeCoverage</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">bldDensity</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># UWG_Matlab assumes bld_area = square, so sqrt(bld_area) = side length</span>
+        <span class="c1"># bld width: (side length) derived from bldDensity and verToHor (m)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">bldHeight</span> <span class="o">*</span> <span class="n">bldDensity</span> <span class="o">/</span> <span class="n">verToHor</span>
+        <span class="c1"># urban area width == sqrt(bldDensity) == \</span>
+        <span class="c1"># ratio of bld footprint_width / urban area footprint</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span> <span class="o">/</span> <span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">bldDensity</span><span class="p">))</span>
+        <span class="c1"># canyon width (m) = urban area width - building width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canWidth</span> <span class="o">=</span> <span class="n">d</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span> <span class="o">=</span> <span class="n">bldHeight</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">canWidth</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roadConf</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wallConf</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span> <span class="o">/</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">facArea</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span> <span class="o">*</span> <span class="n">bldHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*</span> <span class="n">d</span> <span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bldWidth</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">=</span> <span class="n">initialTemp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roadTemp</span> <span class="o">=</span> <span class="n">initialTemp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canHum</span> <span class="o">=</span> <span class="n">initialHum</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ublWind</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">initialWind</span><span class="p">,</span> <span class="n">parameter</span><span class="o">.</span><span class="n">windMin</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canWind</span> <span class="o">=</span> <span class="n">initialWind</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ustar</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="n">initialWind</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ustarMod</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="o">*</span> <span class="n">initialWind</span>
+
+        <span class="c1"># Calculate z0u = urban roughness length (m)</span>
+        <span class="n">frontDens</span> <span class="o">=</span> <span class="n">verToHor</span> <span class="o">/</span> <span class="mf">4.</span>  <span class="c1"># density of just street facing facade</span>
+        <span class="k">if</span> <span class="n">frontDens</span> <span class="o">&lt;</span> <span class="mf">0.15</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">z0u</span> <span class="o">=</span> <span class="n">frontDens</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">z0u</span> <span class="o">=</span> <span class="mf">0.15</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+
+        <span class="c1"># Calculate l_dsp = urban displacement length (m)</span>
+        <span class="k">if</span> <span class="n">frontDens</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">l_disp</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">frontDens</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+        <span class="k">elif</span> <span class="n">frontDens</span> <span class="o">&lt;</span> <span class="mf">0.15</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">l_disp</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.15</span> <span class="o">+</span> <span class="mf">5.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">frontDens</span> <span class="o">-</span> <span class="mf">0.05</span><span class="p">))</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+        <span class="k">elif</span> <span class="n">frontDens</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">l_disp</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.7</span> <span class="o">+</span> <span class="mf">0.35</span> <span class="o">*</span> <span class="p">(</span><span class="n">frontDens</span> <span class="o">-</span> <span class="mf">0.15</span><span class="p">))</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">l_disp</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">alb_wall</span> <span class="o">=</span> <span class="n">alb_wall</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">facAbsor</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">r_glaze</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">alb_wall</span><span class="p">)</span> <span class="o">+</span> <span class="n">r_glaze</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mf">0.75</span> <span class="o">*</span> <span class="n">SHGC</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roadAbsor</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">road</span><span class="o">.</span><span class="n">vegcoverage</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">road</span><span class="o">.</span><span class="n">albedo</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensHeat</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="c1"># Variables set in urbflux function</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">latHeat</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">windProf</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canRHum</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Tdp</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="UCMDef.UCModel"><a class="viewcode-back" href="../../uwg.UCMDef.html#uwg.UCMDef.UCMDef.UCModel">[docs]</a>    <span class="k">def</span> <span class="nf">UCModel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">BEM</span><span class="p">,</span> <span class="n">T_ubl</span><span class="p">,</span> <span class="n">forc</span><span class="p">,</span> <span class="n">parameter</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate the urban canyon temperature per The uwg (2012) Eq. 10.&quot;&quot;&quot;</span>
+
+        <span class="c1"># air density</span>
+        <span class="n">dens</span> <span class="o">=</span> \
+            <span class="n">forc</span><span class="o">.</span><span class="n">pres</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="mf">1.607858</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">canHum</span><span class="p">))</span>
+        <span class="n">dens_ubl</span> <span class="o">=</span> <span class="n">forc</span><span class="o">.</span><span class="n">pres</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="n">T_ubl</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="mf">1.607858</span> <span class="o">*</span> <span class="n">forc</span><span class="o">.</span><span class="n">hum</span><span class="p">))</span>
+        <span class="n">Cp_air</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_wall</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_road</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_hvac</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_traffic</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_vent</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">GasTotal</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roofTemp</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wallTemp</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="c1"># Road to Canyon</span>
+        <span class="n">T_road</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">h_conv</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">road</span><span class="o">.</span><span class="n">aeroCond</span>
+        <span class="n">H1</span> <span class="o">=</span> <span class="n">T_road</span> <span class="o">*</span> <span class="n">h_conv</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span>  <span class="c1"># Heat (Sens) from road surface</span>
+        <span class="n">H2</span> <span class="o">=</span> <span class="n">h_conv</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span>
+
+        <span class="n">H1</span> <span class="o">=</span> <span class="n">H1</span> <span class="o">+</span> <span class="n">T_ubl</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">uExch</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens_ubl</span>  <span class="c1"># Heat from UBL</span>
+        <span class="n">H2</span> <span class="o">=</span> <span class="n">H2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">uExch</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens_ubl</span>
+        <span class="c1"># W = m2 * W/m2</span>
+        <span class="n">Q</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">roadArea</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensAnthrop</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeSensHeat</span><span class="p">)</span>
+
+        <span class="c1"># Building energy output to canyon, in terms of absolute (total) values</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">BEM</span><span class="p">)):</span>
+            <span class="c1"># Re-naming variable for readability</span>
+            <span class="n">building</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span>
+            <span class="n">wall</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">wall</span>
+            <span class="n">T_indoor</span> <span class="o">=</span> <span class="n">building</span><span class="o">.</span><span class="n">indoor_temp</span>
+            <span class="n">T_wall</span> <span class="o">=</span> <span class="n">wall</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">R_glazing</span> <span class="o">=</span> <span class="n">building</span><span class="o">.</span><span class="n">glazing_ratio</span>
+            <span class="n">A_wall</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">R_glazing</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">facArea</span>
+            <span class="n">A_window</span> <span class="o">=</span> <span class="n">R_glazing</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">facArea</span>
+            <span class="n">U_window</span> <span class="o">=</span> <span class="n">building</span><span class="o">.</span><span class="n">u_value</span>
+
+            <span class="n">H1</span> <span class="o">=</span> <span class="n">H1</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span><span class="o">*</span><span class="p">(</span>
+                <span class="n">T_indoor</span> <span class="o">*</span> <span class="n">A_window</span> <span class="o">*</span> <span class="n">U_window</span> <span class="o">+</span>  <span class="c1"># window U</span>
+                <span class="n">T_wall</span> <span class="o">*</span> <span class="n">A_wall</span> <span class="o">*</span> <span class="n">h_conv</span> <span class="o">+</span>  <span class="c1"># wall conv</span>
+                <span class="p">(</span><span class="n">T_indoor</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">vent</span> <span class="o">*</span>
+                 <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">nFloor</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span><span class="p">)</span> <span class="o">+</span>  <span class="c1"># Vent</span>
+                <span class="p">(</span><span class="n">T_indoor</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">infil</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span> <span class="o">/</span>
+                 <span class="mf">3600.0</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span><span class="p">))</span>  <span class="c1"># Infil</span>
+
+            <span class="n">H2</span> <span class="o">=</span> <span class="n">H2</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="p">(</span>
+                <span class="n">A_window</span> <span class="o">*</span> <span class="n">U_window</span> <span class="o">+</span>  <span class="c1"># window U</span>
+                <span class="n">A_wall</span> <span class="o">*</span> <span class="n">h_conv</span> <span class="o">+</span>  <span class="c1"># wall conv</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">vent</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">nFloor</span> <span class="o">*</span>
+                 <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span><span class="p">)</span> <span class="o">+</span>  <span class="c1"># Vent</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">infil</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span> <span class="o">/</span> <span class="mf">3600.0</span> <span class="o">*</span>
+                 <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span><span class="p">))</span>  <span class="c1"># Infil</span>
+
+            <span class="n">Q</span> <span class="o">=</span> <span class="n">Q</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span> <span class="o">*</span> <span class="n">building</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">h_mix</span> <span class="o">+</span>  <span class="c1"># HVAC waste heat</span>
+                <span class="c1"># heat that didn&#39;t make it to inside</span>
+                <span class="n">A_window</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">solRec</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">shgc</span><span class="p">))</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">wallTemp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">wallTemp</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="n">T_wall</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">roofTemp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">roofTemp</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span> <span class="o">*</span>
+                          <span class="p">(</span><span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">sens</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">*</span>
+                          <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">h_mix</span><span class="p">)))</span>  <span class="c1"># Changed by Jiachen Mao in March 2017</span>
+
+        <span class="c1"># Solve for canyon temperature</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">H1</span> <span class="o">+</span> <span class="n">Q</span><span class="p">)</span> <span class="o">/</span> <span class="n">H2</span>
+
+        <span class="c1"># Heat flux based per m^2 of urban area</span>
+        <span class="c1"># Sensible heat from road (W/m^2 of urban area)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_road</span> <span class="o">=</span> <span class="n">h_conv</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_road</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">uExch</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">-</span> <span class="n">T_ubl</span><span class="p">)</span> <span class="o">*</span>
+            <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_wall</span> <span class="o">=</span> <span class="n">h_conv</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wallTemp</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">verToHor</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Q_traffic</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sensAnthrop</span>
+
+        <span class="c1"># Building energy output to canyon, per m^2 of urban area</span>
+        <span class="n">T_can</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">BEM</span><span class="p">)):</span>
+            <span class="c1"># ventilation volume per m^2 of building</span>
+            <span class="n">V_vent</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">vent</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">nFloor</span>
+            <span class="n">V_infil</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">infil</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span> <span class="o">/</span> <span class="mf">3600.0</span>
+            <span class="n">T_indoor</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">indoor_temp</span>
+            <span class="n">U_window</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">u_value</span>  <span class="c1"># Added by Jiachen Mao in 03/17</span>
+            <span class="n">R_glazing</span> <span class="o">=</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">glazing_ratio</span>  <span class="c1"># Changed by Jiachen Mao in 03/17</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">verToHor</span> <span class="o">*</span> <span class="n">R_glazing</span> <span class="o">*</span>
+                             <span class="n">U_window</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_indoor</span> <span class="o">-</span> <span class="n">T_can</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">verToHor</span> <span class="o">*</span> <span class="n">R_glazing</span> <span class="o">*</span>
+                             <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">solRec</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">shgc</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_vent</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Q_vent</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span> <span class="o">*</span> <span class="n">Cp_air</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span>
+                           <span class="p">(</span><span class="n">V_vent</span> <span class="o">+</span> <span class="n">V_infil</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">T_indoor</span> <span class="o">-</span> <span class="n">T_can</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_hvac</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Q_hvac</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span> <span class="o">*</span>
+                           <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">sensWaste</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">h_mix</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_roof</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_roof</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">frac</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">sens</span>
+
+            <span class="c1"># Total Electrical &amp; Gas power in MW</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">fl_area</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">/</span> <span class="mf">1.e6</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">GasTotal</span> <span class="o">=</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">GasTotal</span> <span class="o">+</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">fl_area</span> <span class="o">*</span> <span class="n">BEM</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">GasTotal</span> <span class="o">/</span> <span class="mf">1.e6</span>
+
+        <span class="c1"># ------------------------------------------------------------------------------</span>
+        <span class="c1"># Sensible Heat</span>
+        <span class="c1"># Note 1: In the current uwg code, latent heat from evapotranspiration, stagnant</span>
+        <span class="c1"># water, or anthropogenic sources is not modeled due to the difficulty of</span>
+        <span class="c1"># validation, and lack of reliability of precipitation data from EPW files.</span>
+        <span class="c1"># Note 2: Changed sensHeat to multiply treeSensHeat by treeCoverage fraction.</span>
+        <span class="c1"># Since treeSensHeat calculated in solarcalcs does not multiply sensheat by tree</span>
+        <span class="c1"># fraction. For example, if there were 0 trees, this value should be 0.</span>
+        <span class="c1"># ------------------------------------------------------------------------------</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensHeat</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_wall</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_road</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_vent</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_window</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_hvac</span> <span class="o">+</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Q_traffic</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeSensHeat</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Q_roof</span><span class="p">)</span>
+
+        <span class="c1"># Error checking</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">&gt;</span> <span class="mf">350.</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">&lt;</span> <span class="mi">250</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Got canyon temperature at </span><span class="si">{}</span><span class="s1"> C. Something obviously went &#39;</span>
+                            <span class="s1">&#39;wrong (UCMDef.py).&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">canTemp</span> <span class="o">-</span> <span class="mf">273.15</span><span class="p">))</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;UCMDef,</span><span class="se">\n</span><span class="s1"> verToHor: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> bldDensity: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> bldHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> canWidth: &#39;</span> \
+            <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="s1"> canAspect: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> facArea: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> roofArea: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">verToHor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldDensity</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldHeight</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">canWidth</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">canAspect</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">facArea</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">roofArea</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

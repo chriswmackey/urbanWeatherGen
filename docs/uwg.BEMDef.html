@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.BEMDef module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.RSMDef module" href="uwg.RSMDef.html" />
+    <link rel="prev" title="uwg.cli.validate module" href="uwg.cli.validate.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.cli.validate.html" title="Previous Chapter: uwg.cli.validate module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.cli.valid...</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.RSMDef.html" title="Next Chapter: uwg.RSMDef module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.RSMDef module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.BEMDef.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.BEMDef">
+<span id="uwg-bemdef-module"></span><h1>uwg.BEMDef module<a class="headerlink" href="#module-uwg.BEMDef" title="Permalink to this headline">¶</a></h1>
+<p>Building Energy Model (BEM) class definition.</p>
+<dl class="py class">
+<dt id="uwg.BEMDef.BEMDef">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">uwg.BEMDef.</span></code><code class="sig-name descname"><span class="pre">BEMDef</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">building</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wall</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">roof</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bldtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builtera</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/BEMDef.html#BEMDef"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.BEMDef.BEMDef" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Building Energy Model (BEM) definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>building</strong> – Building object.</p></li>
+<li><p><strong>mass</strong> – Element object representing building internal mass.</p></li>
+<li><p><strong>wall</strong> – Element object representing building wall.</p></li>
+<li><p><strong>roof</strong> – Element object representing building roof.</p></li>
+<li><p><strong>bldtype</strong> – Text referring to a building type. By default, 16 building types are
+defined in the UWG according to models from the Department of Energy (DOE).
+Custom building types can also be defined with a new name. Note that this
+value along with the BEMDef builtera must exactly match the identifiers in
+the UWG bld list in order to specify the fraction of total built stock the
+building occupies in the UWG simulation. Choose from the following to
+reference or overwrite a BEM associated with a DOE reference building type:
+‘fullservicerestaurant’, ‘hospital’, ‘largehotel’, ‘largeoffice’,
+‘mediumoffice’, ‘midriseapartment’, ‘outpatient’, ‘primaryschool’,
+‘quickservicerestaurant’, ‘secondaryschool’, ‘smallhotel’, ‘smalloffice’,
+‘standaloneretail’, ‘stripmall’, ‘supermarket’, or ‘warehouse’.</p></li>
+<li><p><strong>builtera</strong> – Text defining building built era. Must be one of the following:
+“pre80” (pre-1980s), “pst80” (post-1980s), or “new” (new construction).
+This value along with the bldtype must exactly match the identifiers in
+the bld array in order to specify the fraction of total built stock the
+building occupies in the UWG simulation.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>building – Building object</p></li>
+<li><p>mass – Element object representing building internal mass.</p></li>
+<li><p>wall – Element object representing building wall.</p></li>
+<li><p>roof – Element object representing building roof.</p></li>
+<li><p>frac – fraction of the urban floor space of this building typology.</p></li>
+<li><p>bldtype – number for building type</p></li>
+<li><p>builtera – number for built era</p></li>
+<li><p>fl_area – building typology urban floor area [m2]</p></li>
+<li><p>elec – actual electricity consumption [W/m2]</p></li>
+<li><p>gas – actual gas consumption [W/m2]</p></li>
+<li><p>light – actual light [W/m2]</p></li>
+<li><p>Qocc – actual heat load from occupant [W/m2]</p></li>
+<li><p>swh – actual hot water usage</p></li>
+<li><p>Nocc – number of occupants</p></li>
+<li><p>ElecTotal – actual total electricity [W/m2]</p></li>
+<li><p>T_wallex – wall surface temp (ext) [K]</p></li>
+<li><p>T_wallin – wall surface temp (int) [K]</p></li>
+<li><p>T_roofex – roof surface temp (ext) [K]</p></li>
+<li><p>T_roofin – roof surface temp (int) [K]</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/BEMDef.html#BEMDef.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.BEMDef.BEMDef.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a BEMDef object from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A BEMDef dictionary following the format below.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/BEMDef.html#BEMDef.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.BEMDef.BEMDef.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>BEMDef dictionary representation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.bldtype">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">bldtype</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.bldtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set text for building type.</p>
+<p>By default, 16 building types are defined in the UWG according to models from
+the Department of Energy (DOE). Choose from the following to reference or
+overwrite a BEM associated with a DOE reference building type:</p>
+<ul class="simple">
+<li><p>‘fullservicerestaurant’</p></li>
+<li><p>‘hospital’</p></li>
+<li><p>‘largehotel’</p></li>
+<li><p>‘largeoffice’</p></li>
+<li><p>‘medoffice’</p></li>
+<li><p>‘midriseapartment’</p></li>
+<li><p>‘outpatient’</p></li>
+<li><p>‘primaryschool’</p></li>
+<li><p>‘quickservicerestaurant’</p></li>
+<li><p>‘secondaryschool’</p></li>
+<li><p>‘smallhotel’</p></li>
+<li><p>‘smalloffice’</p></li>
+<li><p>‘standaloneretail’</p></li>
+<li><p>‘stripmall’</p></li>
+<li><p>‘supermarket’</p></li>
+<li><p>‘warehouse’</p></li>
+</ul>
+<p>Custom building types can also be defined with a new name. If a custom BEMDef is
+defined with the same name as a reference DOE building type from the list above,
+the reference BEMDef will be overwritten by the custom BEMDef. Note that this
+value along with the BEMDef builtera must exactly match the identifiers in the
+UWG bld list in order to specify the fraction of total built stock the building
+occupies in the UWG simulation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.building">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">building</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.building" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set Building object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.builtera">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">builtera</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.builtera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set text for built era.</p>
+<p>Must be one of the following:</p>
+<ul class="simple">
+<li><p>‘pre80’ - pre-1980s</p></li>
+<li><p>‘pst80’ - post-1980s</p></li>
+<li><p>‘new’ - new construction</p></li>
+</ul>
+<p>This value along with the bldtype must exactly match the identifiers in
+the bld array in order to specify the fraction of total built stock the
+building occupies in the UWG simulation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.mass">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">mass</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set Element as representative building internal mass.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.roof">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">roof</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.roof" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set Element as representative building roof.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.BEMDef.BEMDef.wall">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">wall</span></code><a class="headerlink" href="#uwg.BEMDef.BEMDef.wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set Element as representative building wall.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

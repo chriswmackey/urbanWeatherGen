@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.element &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.element</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Element class.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">range</span> <span class="o">=</span> <span class="n">xrange</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">.utilities</span> <span class="kn">import</span> <span class="n">is_near_zero</span><span class="p">,</span> <span class="n">float_in_range</span><span class="p">,</span> <span class="n">float_positive</span>
+<span class="kn">from</span> <span class="nn">.material</span> <span class="kn">import</span> <span class="n">Material</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">str</span> <span class="o">=</span> <span class="n">basestring</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<div class="viewcode-block" id="Element"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element">[docs]</a><span class="k">class</span> <span class="nc">Element</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Element object defines wall, and roof constructions.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        albedo: Number for outer surface albedo.</span>
+<span class="sd">        emissivity: Number for outer surface emissivity.</span>
+<span class="sd">        layer_thickness_lst: List of layer thickness in meters.</span>
+<span class="sd">        material_lst: List of Material objects in Element.</span>
+<span class="sd">        vegcoverage: Number for fraction of surface vegetation coverage.</span>
+<span class="sd">        t_init: Element initial temperature [K].</span>
+<span class="sd">        horizontal: Boolean indicating if Element is horizontal or not (vertical).</span>
+<span class="sd">        name: Text string for name of Element.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * albedo -- outer surface albedo</span>
+<span class="sd">        * emissivity -- outer surface emissivity.</span>
+<span class="sd">        * layer_thickness_lst -- list of layer thickness [m]</span>
+<span class="sd">        * material_lst -- material objects in Element.</span>
+<span class="sd">        * layerThermalCond -- vector of layer thermal conductivities [W m-1 K-1]</span>
+<span class="sd">        * layerVolHeat -- vector of layer volumetric heat [J m-3 K-1]</span>
+<span class="sd">        * vegcoverage -- surface grass coverage</span>
+<span class="sd">        * t_init -- element initial temperature [K].</span>
+<span class="sd">        * layerTemp -- vector of layer temperatures [K]</span>
+<span class="sd">        * waterStorage -- thickness of water film [m] for horizontal surfaces only</span>
+<span class="sd">        * horizontal -- 1-horizontal, 0-vertical</span>
+<span class="sd">        * solRec -- solar radiation received [W m-2]</span>
+<span class="sd">        * infra -- net longwave radiation [W m-2]</span>
+<span class="sd">        * lat -- surface latent heat flux [W m-2]</span>
+<span class="sd">        * sens -- surface sensible heat flux [W m-2]</span>
+<span class="sd">        * solAbs -- solar radiation absorbed [W m-2]</span>
+<span class="sd">        * aeroCond -- convective heat transfer coefficient [-]</span>
+<span class="sd">        * T_ext -- external surface temperature [K]</span>
+<span class="sd">        * T_int -- internal surface temperature [K]</span>
+<span class="sd">        * flux -- external surface heat flux [W m-2]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">albedo</span><span class="p">,</span> <span class="n">emissivity</span><span class="p">,</span> <span class="n">layer_thickness_lst</span><span class="p">,</span> <span class="n">material_lst</span><span class="p">,</span>
+                 <span class="n">vegcoverage</span><span class="p">,</span> <span class="n">t_init</span><span class="p">,</span> <span class="n">horizontal</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+
+        <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer_thickness_lst</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">material_lst</span><span class="p">),</span> <span class="s1">&#39;The number of layer &#39;</span> \
+            <span class="s1">&#39;thickness must match the number of layer materials. Got </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1">, &#39;</span> \
+            <span class="s1">&#39;respectively.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">layer_thickness_lst</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">material_lst</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span> <span class="o">=</span> <span class="n">albedo</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">emissivity</span> <span class="o">=</span> <span class="n">emissivity</span>  <span class="c1"># outer surface emissivity.</span>
+        <span class="c1"># list of layer thickness [m]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer_thickness_lst</span> <span class="o">=</span> <span class="n">layer_thickness_lst</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">material_lst</span> <span class="o">=</span> <span class="n">material_lst</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span> <span class="o">=</span> <span class="n">vegcoverage</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">t_init</span> <span class="o">=</span> <span class="n">t_init</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">horizontal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">horizontal</span><span class="p">)</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+        <span class="c1"># layerThermaCond:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layerThermalCond</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">material</span><span class="o">.</span><span class="n">thermalcond</span> <span class="k">for</span> <span class="n">material</span> <span class="ow">in</span> <span class="n">material_lst</span><span class="p">]</span>
+        <span class="c1"># layerVolHeat:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layerVolHeat</span> <span class="o">=</span> <span class="p">[</span><span class="n">material</span><span class="o">.</span><span class="n">volheat</span> <span class="k">for</span> <span class="n">material</span> <span class="ow">in</span> <span class="n">material_lst</span><span class="p">]</span>
+        <span class="c1"># layerTemp: #</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span> <span class="o">=</span> <span class="p">[</span><span class="n">t_init</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer_thickness_lst</span><span class="p">)</span>
+        <span class="c1"># waterStorage: #</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">infra</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sens</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lat</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">aeroCond</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_ext</span> <span class="o">=</span> <span class="mi">293</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_int</span> <span class="o">=</span> <span class="mi">293</span>  <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">flux</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1">#</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">albedo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a value between 0 and 1 for outer surface albedo.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_albedo</span>
+
+    <span class="nd">@albedo</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">albedo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_albedo</span> <span class="o">=</span> <span class="n">float_positive</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;albedo&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">emissivity</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set a value between 0 and 1 for outer surface emissivity.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_emissivity</span>
+
+    <span class="nd">@emissivity</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">emissivity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_emissivity</span> <span class="o">=</span> <span class="n">float_positive</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;emissivity&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">layer_thickness_lst</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set list of thickness in meters of each Material in Element.</span>
+
+<span class="sd">        The order of thickness should correspond to the order of the Material objects in</span>
+<span class="sd">        material_lst.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_layer_thickness_lst</span>
+
+    <span class="nd">@layer_thickness_lst</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">layer_thickness_lst</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">v</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">value</span><span class="p">),</span> <span class="s1">&#39;Every value in layer_thickness_lst &#39;</span>
+        <span class="s1">&#39;must be greater than 0.&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_layer_thickness_lst</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">material_lst</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set list of Material objects in the element.</span>
+
+<span class="sd">        The order of Material objects should correspond to the order of the thickness in</span>
+<span class="sd">        layer_thickness_lst.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_material_lst</span>
+
+    <span class="nd">@material_lst</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">material_lst</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">Material</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">value</span><span class="p">),</span> <span class="s1">&#39;Every item in &#39;</span>
+        <span class="s1">&#39;in material_lst must be a Material object.&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_material_lst</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">vegcoverage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set fraction of vegetation coverage on Element.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vegcoverage</span>
+
+    <span class="nd">@vegcoverage</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">vegcoverage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_vegcoverage</span> <span class="o">=</span> <span class="n">float_in_range</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;vegcoverage&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">t_init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set initial temperature of Element [K].&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_t_init</span>
+
+    <span class="nd">@t_init</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">t_init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_t_init</span> <span class="o">=</span> <span class="n">float_in_range</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">mi</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s1">&#39;t_init&#39;</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">horizontal</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set boolean value indicating if Element is horizontal or not.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_horizontal</span>
+
+    <span class="nd">@horizontal</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">horizontal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_horizontal</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set text string for name of Element.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+<div class="viewcode-block" id="Element.from_dict"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a Element object from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A Element dictionary following the format below.</span>
+
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;albedo&quot;: 0.08,</span>
+<span class="sd">            &quot;emissivity&quot;: 0.92,</span>
+<span class="sd">            &quot;layer_thickness_lst&quot;: [0.0254, 0.0508, 0.0254],</span>
+<span class="sd">            &quot;material_lst&quot;: material_dict_lst,  # List of material dictionaries</span>
+<span class="sd">            &quot;vegcoverage&quot;: 0.5,</span>
+<span class="sd">            &quot;t_init&quot;: 293,</span>
+<span class="sd">            &quot;horizontal&quot;: False,</span>
+<span class="sd">            &quot;name&quot;: MassWall</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Element&#39;</span><span class="p">,</span> <span class="s1">&#39;Expected &#39;</span> \
+            <span class="s1">&#39;Element dictionary. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+
+        <span class="n">materials</span> <span class="o">=</span> <span class="p">[</span><span class="n">Material</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;material_lst&#39;</span><span class="p">]]</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;albedo&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;emissivity&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;layer_thickness_lst&#39;</span><span class="p">],</span>
+                   <span class="n">materials</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;vegcoverage&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;t_init&#39;</span><span class="p">],</span>
+                   <span class="n">data</span><span class="p">[</span><span class="s1">&#39;horizontal&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Element.to_dict"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Element dictionary representation.&quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;Element&#39;</span><span class="p">}</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;albedo&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;emissivity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">emissivity</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;layer_thickness_lst&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer_thickness_lst</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;material_lst&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">m</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">material_lst</span><span class="p">]</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;vegcoverage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;t_init&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">t_init</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;horizontal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">horizontal</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">return</span> <span class="n">base</span></div>
+
+<div class="viewcode-block" id="Element.SurfFlux"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.SurfFlux">[docs]</a>    <span class="k">def</span> <span class="nf">SurfFlux</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">forc</span><span class="p">,</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">simTime</span><span class="p">,</span> <span class="n">humRef</span><span class="p">,</span> <span class="n">tempRef</span><span class="p">,</span> <span class="n">windRef</span><span class="p">,</span> <span class="n">boundCond</span><span class="p">,</span>
+                 <span class="n">intFlux</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate net heat flux, and update element layer temperatures.&quot;&quot;&quot;</span>
+
+        <span class="c1"># Calculated per unit area [m^2]</span>
+
+        <span class="c1"># dens: air density (kgd m-3)</span>
+        <span class="n">dens</span> <span class="o">=</span> <span class="n">forc</span><span class="o">.</span><span class="n">pres</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="n">tempRef</span> <span class="o">*</span>
+                            <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="mf">1.607858</span> <span class="o">*</span> <span class="n">humRef</span><span class="p">))</span>
+        <span class="c1"># convection coef (ref: uwg, eq. 12))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">aeroCond</span> <span class="o">=</span> <span class="mf">5.8</span> <span class="o">+</span> <span class="mf">3.7</span> <span class="o">*</span> <span class="n">windRef</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">horizontal</span><span class="p">:</span>
+            <span class="c1"># For roof, mass, road</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">is_near_zero</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">:</span>
+                <span class="c1"># Evaporation [m s-1], Film water &amp; soil latent heat</span>
+                <span class="c1"># Note: in the current uwg code, latent heat from evapotranspiration,</span>
+                <span class="c1"># stagnant water, or anthropogenic sources is not modelled due to the</span>
+                <span class="c1"># difficulty of validation, and lack of reliability of precipitation</span>
+                <span class="c1"># data from EPW files.Therefore this condition is never run because all</span>
+                <span class="c1"># elements have had their waterStorage hardcoded to 0.</span>
+                <span class="n">qtsat</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">qsat</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="p">[</span>
+                                  <span class="n">forc</span><span class="o">.</span><span class="n">pres</span><span class="p">],</span> <span class="n">parameter</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">eg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">aeroCond</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">colburn</span> <span class="o">*</span> <span class="n">dens</span> <span class="o">*</span> \
+                    <span class="p">(</span><span class="n">qtsat</span> <span class="o">-</span> <span class="n">humRef</span><span class="p">)</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">waterDens</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span> <span class="o">=</span> \
+                    <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span> <span class="o">+</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="n">forc</span><span class="o">.</span><span class="n">prec</span> <span class="o">-</span> <span class="n">eg</span><span class="p">),</span>
+                        <span class="n">parameter</span><span class="o">.</span><span class="n">wgmax</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">waterStorage</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>  <span class="c1"># [m]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">eg</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="n">soilLat</span> <span class="o">=</span> <span class="n">eg</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">waterDens</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">lv</span>
+
+            <span class="k">if</span> <span class="n">simTime</span><span class="o">.</span><span class="n">month</span> <span class="o">&lt;</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegStart</span> <span class="ow">and</span> <span class="n">simTime</span><span class="o">.</span><span class="n">month</span> <span class="o">&gt;</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegEnd</span><span class="p">:</span>
+                <span class="c1"># Winter, no veg</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span>  <span class="c1"># (W m-2)</span>
+                <span class="n">vegLat</span> <span class="o">=</span> <span class="mf">0.</span>
+                <span class="n">vegSen</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># Summer, veg</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="p">((</span><span class="mf">1.0</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span> <span class="o">*</span>
+                     <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">))</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="c1"># if road compute grass/tree fractions seperately</span>
+                    <span class="n">vegLat</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">grasscoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                    <span class="n">vegLat</span> <span class="o">+=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">treecoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="n">parameter</span><span class="o">.</span><span class="n">treeFLat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                    <span class="n">vegSen</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">grasscoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                    <span class="n">vegSen</span> <span class="o">+=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">treecoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">treeFLat</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+                    <span class="c1"># for all other Elements use veg fraction w/ grassFLat</span>
+                    <span class="n">vegLat</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+                    <span class="n">vegSen</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">)</span> <span class="o">*</span>
+                        <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">grassFLat</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">lat</span> <span class="o">=</span> <span class="n">soilLat</span> <span class="o">+</span> <span class="n">vegLat</span>
+
+            <span class="c1"># Sensible &amp; net heat flux</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sens</span> <span class="o">=</span> <span class="n">vegSen</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">aeroCond</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">tempRef</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">flux</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">infra</span> <span class="o">-</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">lat</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sens</span>  <span class="c1"># [W m-2]</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># For vertical surfaces (wall)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">solRec</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lat</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+            <span class="c1"># Sensible &amp; net heat flux</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sens</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">aeroCond</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">tempRef</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">flux</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">solAbs</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">infra</span> <span class="o">-</span> \
+                <span class="bp">self</span><span class="o">.</span><span class="n">lat</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">sens</span>  <span class="c1"># [W m-2]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">Conduction</span><span class="p">(</span><span class="n">simTime</span><span class="o">.</span><span class="n">dt</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">flux</span><span class="p">,</span> <span class="n">boundCond</span><span class="p">,</span>
+                            <span class="n">forc</span><span class="o">.</span><span class="n">deepTemp</span><span class="p">,</span> <span class="n">intFlux</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_ext</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_int</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="Element.Conduction"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.Conduction">[docs]</a>    <span class="k">def</span> <span class="nf">Conduction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">flx1</span><span class="p">,</span> <span class="n">bc</span><span class="p">,</span> <span class="n">temp2</span><span class="p">,</span> <span class="n">flx2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Solve the conductance of heat based on of the element layers.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dt: Simulation time step in seconds.</span>
+<span class="sd">            flx1: Net heat flux on surface [W m-2]</span>
+<span class="sd">            bc: Boundary condition parameter (1 or 2)</span>
+<span class="sd">            temp2: Deep soil temperature (ave of air temperature) [K]</span>
+<span class="sd">            flx2: Surface flux (sum of absorbed, emitted, etc.) [W m-2]</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A 1d vector of element layer temperatures.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span>          <span class="c1"># vector of layer temperatures (K)</span>
+        <span class="c1"># vector of layer volumetric heat (J m-3 K-1)</span>
+        <span class="n">hc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerVolHeat</span>
+        <span class="c1"># vector of layer thermal conductivities (W m-1 K-1)</span>
+        <span class="n">tc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerThermalCond</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer_thickness_lst</span>     <span class="c1"># vector of layer thicknesses (m)</span>
+
+        <span class="n">fimp</span> <span class="o">=</span> <span class="mf">0.5</span>                  <span class="c1"># implicit coefficient</span>
+        <span class="n">fexp</span> <span class="o">=</span> <span class="mf">0.5</span>                  <span class="c1"># explicit coefficient</span>
+        <span class="n">num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>                <span class="c1"># number of layers</span>
+
+        <span class="c1"># Mean thermal conductivity over distance between 2 layers (W/mK)</span>
+        <span class="n">tcp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)]</span>
+        <span class="c1"># Thermal capacity times layer depth (J/m2K)</span>
+        <span class="n">hcp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)]</span>
+        <span class="c1"># lower, main, and upper diagonals</span>
+        <span class="n">za</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)]</span>
+        <span class="c1"># RHS</span>
+        <span class="n">zy</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">)]</span>
+
+        <span class="c1"># --------------------------------------------------------------------------</span>
+        <span class="c1"># Define the column vectors for heat capactiy and conductivity</span>
+        <span class="n">hcp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">hc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+            <span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.</span> <span class="o">/</span> <span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">tc</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">/</span> <span class="n">tc</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">hcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">hc</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">d</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+        <span class="c1"># --------------------------------------------------------------------------</span>
+        <span class="c1"># Define the first row of za matrix, and RHS column vector</span>
+        <span class="n">za</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">za</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">fimp</span> <span class="o">*</span> <span class="n">tcp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">za</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">fimp</span> <span class="o">*</span> <span class="n">tcp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">zy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span><span class="o">*</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">fexp</span> <span class="o">*</span> <span class="n">tcp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="n">flx1</span>
+
+        <span class="c1"># --------------------------------------------------------------------------</span>
+        <span class="c1"># Define other rows</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">fimp</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">fimp</span> <span class="o">*</span> <span class="p">(</span><span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">fimp</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">zy</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">fexp</span> <span class="o">*</span> \
+                <span class="p">(</span><span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span>
+                 <span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">tcp</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="c1"># --------------------------------------------------------------------------</span>
+        <span class="c1"># Boundary conditions</span>
+        <span class="k">if</span> <span class="n">is_near_zero</span><span class="p">(</span><span class="n">bc</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">):</span>
+            <span class="c1"># heat flux</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">fimp</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">tcp</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">+</span> <span class="n">fimp</span> <span class="o">*</span> <span class="n">tcp</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="n">zy</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">hcp</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">t</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">fexp</span> <span class="o">*</span> <span class="n">tcp</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> \
+                <span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="n">flx2</span>
+        <span class="k">elif</span> <span class="n">is_near_zero</span><span class="p">(</span><span class="n">bc</span> <span class="o">-</span> <span class="mf">2.0</span><span class="p">):</span>
+            <span class="c1"># deep-temperature</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.</span>
+            <span class="n">za</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="n">zy</span><span class="p">[</span><span class="n">num</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp2</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;Error during conduction calculation. Check input &#39;</span>
+                            <span class="s1">&#39;parameters in the Conduction routine.&#39;</span><span class="p">)</span>
+
+        <span class="c1"># --------------------------------------------------------------------------</span>
+        <span class="n">zx</span> <span class="o">=</span> <span class="n">Element</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">za</span><span class="p">,</span> <span class="n">zy</span><span class="p">)</span>
+        <span class="c1"># t(:) = zx(:)</span>
+        <span class="k">return</span> <span class="n">zx</span>  <span class="c1"># return zx as 1d vector of templayers</span></div>
+
+<div class="viewcode-block" id="Element.qsat"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.qsat">[docs]</a>    <span class="k">def</span> <span class="nf">qsat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">pres</span><span class="p">,</span> <span class="n">parameter</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Calculate vector of saturation humidity from air pressure and layer temperatures.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            temp: List of layer temperatures [K].</span>
+<span class="sd">            pres: Pressure (at current timestep) [Pa].</span>
+<span class="sd">            parameter: Parameter object with geographic parameters.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            List of saturation humidity values.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">gamw</span> <span class="o">=</span> <span class="p">(</span><span class="n">parameter</span><span class="o">.</span><span class="n">cl</span> <span class="o">-</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cpv</span><span class="p">)</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">rv</span>
+        <span class="n">betaw</span> <span class="o">=</span> <span class="p">(</span><span class="n">parameter</span><span class="o">.</span><span class="n">lvtt</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">rv</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">gamw</span> <span class="o">*</span> <span class="n">parameter</span><span class="o">.</span><span class="n">tt</span><span class="p">)</span>
+        <span class="n">alpw</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">parameter</span><span class="o">.</span><span class="n">estt</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">betaw</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">tt</span><span class="p">)</span> <span class="o">+</span> \
+            <span class="p">(</span><span class="n">gamw</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">parameter</span><span class="o">.</span><span class="n">tt</span><span class="p">))</span>
+        <span class="n">work2</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">r</span> <span class="o">/</span> <span class="n">parameter</span><span class="o">.</span><span class="n">rv</span>
+        <span class="n">foes_lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))]</span>
+        <span class="n">work1_lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))]</span>
+        <span class="n">qsat_lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">)):</span>
+            <span class="c1"># saturation vapor pressure</span>
+            <span class="n">foes_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span>
+                <span class="n">alpw</span> <span class="o">-</span> <span class="p">(</span><span class="n">betaw</span> <span class="o">/</span> <span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">gamw</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">temp</span><span class="p">[</span><span class="n">i</span><span class="p">])))</span>
+            <span class="n">work1_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">foes_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">pres</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="c1"># saturation humidity</span>
+            <span class="n">qsat_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">work2</span> <span class="o">*</span> <span class="n">work1_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> \
+                <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="p">((</span><span class="n">work2</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span> <span class="o">*</span> <span class="n">work1_lst</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="n">qsat_lst</span></div>
+
+<div class="viewcode-block" id="Element.invert"><a class="viewcode-back" href="../../uwg.element.html#uwg.element.Element.invert">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">invert</span><span class="p">(</span><span class="n">nz</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Invert and solve tridiagonal matrix.</span>
+
+<span class="sd">        Given A * X = C, solves for X, where</span>
+<span class="sd">            a(*, 1) lower diagonal (Ai, i-1)</span>
+<span class="sd">            a(*, 2) principal diagonal (Ai, i)</span>
+<span class="sd">            a(*, 3) upper diagonal (Ai, i+1)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            nz: number of layers.</span>
+<span class="sd">            A: A matrix to invert.</span>
+<span class="sd">            C: Result from A * X</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Solved matrix X from matrix inversion.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="p">)]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="o">-</span><span class="mi">1</span><span class="p">)):</span>
+            <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nz</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="p">):</span>
+            <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">X</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">rval</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="nb">sum</span><span class="p">([</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerThermalCond</span><span class="p">]),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39;Element,</span><span class="se">\n</span><span class="s1"> name: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> emissivity: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> albedo: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> R value: &#39;</span> \
+            <span class="s1">&#39;</span><span class="si">{}</span><span class="se">\n</span><span class="s1"> vegcoverage: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> horizontal: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> layer_thickness_lst: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;layerTemp: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">emissivity</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">albedo</span><span class="p">,</span> <span class="n">rval</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegcoverage</span><span class="p">,</span>
+                <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">horizontal</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer_thickness_lst</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">layerTemp</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

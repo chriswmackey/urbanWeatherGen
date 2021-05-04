@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.param &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.param</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Geographic Parameters class.&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="Param"><a class="viewcode-back" href="../../uwg.param.html#uwg.param.Param">[docs]</a><span class="k">class</span> <span class="nc">Param</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Geographic Parameters class.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        dayBLHeight: Daytime mixing height [orig: 700] [m].</span>
+<span class="sd">        nightBLHeight: Nighttime boundary-layer height</span>
+<span class="sd">            (orig: 80, Sing: 80, Bub-Cap: 50) [m]</span>
+<span class="sd">        refHeight: Reference height at which the vertical profile of potential</span>
+<span class="sd">            temperature is vertical</span>
+<span class="sd">        tempHeight: Temperature measuremnt height at the weather station [m]</span>
+<span class="sd">        windHeight: Air velocity measuremnt height at the weather station [m]</span>
+<span class="sd">        circCoeff: Wind scaling coefficient</span>
+<span class="sd">        dayThreshold: Heat flux threshold for daytime conditions [W m-2]</span>
+<span class="sd">        nightThreshold: Heat flux threshold for nighttime conditions [W m-2]</span>
+<span class="sd">        treeFLat: Value between 0 and 1 for latent fraction of trees</span>
+<span class="sd">        grassFLat: Value between 0 and 1 for latent fraction of grass</span>
+<span class="sd">        vegAlbedo: Value between 0 and 1 for albedo of vegetation</span>
+<span class="sd">        vegStart: Value between 1 and 12 for begin month for vegetation participation</span>
+<span class="sd">        vegEnd: Value between 1 and 12 for end month for vegetation participation</span>
+<span class="sd">        nightSetStart: Begin hour for night thermal set point schedule</span>
+<span class="sd">        nightSetEnd: End hour for night thermal set point schedule</span>
+<span class="sd">        windMin: Minimum wind speed [m s-1]</span>
+<span class="sd">        wgmax: Maximum film water depth on horizontal surfaces [m]</span>
+<span class="sd">        exCoeff: Exchange velocity coefficient</span>
+<span class="sd">        maxdx: Maximum discretization length for the UBL model [m]</span>
+<span class="sd">        g: Gravity [m s-2]</span>
+<span class="sd">        cp: Heat capacity for air [J/kg K]</span>
+<span class="sd">        vk: Von karman constant [dimensionless]</span>
+<span class="sd">        r: Gas constant for dry air [J/kg K]</span>
+<span class="sd">        rv: Gas constant for water vapor [J/kg K]</span>
+<span class="sd">        lv: Latent heat of evaporation [J/kg]</span>
+<span class="sd">        pi: Pi</span>
+<span class="sd">        sigma: Stefan Boltzmann constant [W K-4 m-2]</span>
+<span class="sd">        waterDens: Water density [kg m-3]</span>
+<span class="sd">        lvtt: Undefined.</span>
+<span class="sd">        tt: Undefined.</span>
+<span class="sd">        estt: Undefined.</span>
+<span class="sd">        cl: Undefined.</span>
+<span class="sd">        cpv: Undefined.</span>
+<span class="sd">        b  : Coefficients derived by Louis [1979]</span>
+<span class="sd">        cm : Undefined.</span>
+<span class="sd">        colburn: [Pr/Sc]^[2/3] for Colburn analogy in water evaporation</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * dayBLHeight</span>
+<span class="sd">        * nightBLHeight</span>
+<span class="sd">        * refHeight</span>
+<span class="sd">        * tempHeight</span>
+<span class="sd">        * windHeight</span>
+<span class="sd">        * circCoeff</span>
+<span class="sd">        * dayThreshold</span>
+<span class="sd">        * nightThreshold</span>
+<span class="sd">        * treeFLat</span>
+<span class="sd">        * grassFLat</span>
+<span class="sd">        * vegAlbedo</span>
+<span class="sd">        * vegStart</span>
+<span class="sd">        * vegEnd</span>
+<span class="sd">        * nightSetStart</span>
+<span class="sd">        * nightSetEnd</span>
+<span class="sd">        * windMin</span>
+<span class="sd">        * wgmax</span>
+<span class="sd">        * exCoeff</span>
+<span class="sd">        * maxdx</span>
+<span class="sd">        * g</span>
+<span class="sd">        * cp</span>
+<span class="sd">        * vk</span>
+<span class="sd">        * r</span>
+<span class="sd">        * rv</span>
+<span class="sd">        * lv</span>
+<span class="sd">        * pi</span>
+<span class="sd">        * sigma</span>
+<span class="sd">        * waterDens</span>
+<span class="sd">        * lvtt</span>
+<span class="sd">        * tt</span>
+<span class="sd">        * estt</span>
+<span class="sd">        * cl</span>
+<span class="sd">        * cpv</span>
+<span class="sd">        * b</span>
+<span class="sd">        * cm</span>
+<span class="sd">        * colburn</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dayBLHeight</span><span class="p">,</span> <span class="n">nightBLHeight</span><span class="p">,</span> <span class="n">refHeight</span><span class="p">,</span> <span class="n">tempHeight</span><span class="p">,</span> <span class="n">windHeight</span><span class="p">,</span>
+                 <span class="n">circCoeff</span><span class="p">,</span> <span class="n">dayThreshold</span><span class="p">,</span> <span class="n">nightThreshold</span><span class="p">,</span> <span class="n">treeFLat</span><span class="p">,</span> <span class="n">grassFLat</span><span class="p">,</span> <span class="n">vegAlbedo</span><span class="p">,</span>
+                 <span class="n">vegStart</span><span class="p">,</span> <span class="n">vegEnd</span><span class="p">,</span> <span class="n">nightSetStart</span><span class="p">,</span> <span class="n">nightSetEnd</span><span class="p">,</span> <span class="n">windMin</span><span class="p">,</span> <span class="n">wgmax</span><span class="p">,</span> <span class="n">exCoeff</span><span class="p">,</span>
+                 <span class="n">maxdx</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">cp</span><span class="p">,</span> <span class="n">vk</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">rv</span><span class="p">,</span> <span class="n">lv</span><span class="p">,</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">waterDens</span><span class="p">,</span> <span class="n">lvtt</span><span class="p">,</span> <span class="n">tt</span><span class="p">,</span> <span class="n">estt</span><span class="p">,</span> <span class="n">cl</span><span class="p">,</span>
+                 <span class="n">cpv</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">cm</span><span class="p">,</span> <span class="n">colburn</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">dayBLHeight</span> <span class="o">=</span> <span class="n">dayBLHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nightBLHeight</span> <span class="o">=</span> <span class="n">nightBLHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">refHeight</span> <span class="o">=</span> <span class="n">refHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tempHeight</span> <span class="o">=</span> <span class="n">tempHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">windHeight</span> <span class="o">=</span> <span class="n">windHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">circCoeff</span> <span class="o">=</span> <span class="n">circCoeff</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dayThreshold</span> <span class="o">=</span> <span class="n">dayThreshold</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nightThreshold</span> <span class="o">=</span> <span class="n">nightThreshold</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">treeFLat</span> <span class="o">=</span> <span class="n">treeFLat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">grassFLat</span> <span class="o">=</span> <span class="n">grassFLat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vegAlbedo</span> <span class="o">=</span> <span class="n">vegAlbedo</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vegStart</span> <span class="o">=</span> <span class="n">vegStart</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vegEnd</span> <span class="o">=</span> <span class="n">vegEnd</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nightSetStart</span> <span class="o">=</span> <span class="n">nightSetStart</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nightSetEnd</span> <span class="o">=</span> <span class="n">nightSetEnd</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">windMin</span> <span class="o">=</span> <span class="n">windMin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wgmax</span> <span class="o">=</span> <span class="n">wgmax</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">exCoeff</span> <span class="o">=</span> <span class="n">exCoeff</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">maxdx</span> <span class="o">=</span> <span class="n">maxdx</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">g</span> <span class="o">=</span> <span class="n">g</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cp</span> <span class="o">=</span> <span class="n">cp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vk</span> <span class="o">=</span> <span class="n">vk</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rv</span> <span class="o">=</span> <span class="n">rv</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lv</span> <span class="o">=</span> <span class="n">lv</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pi</span> <span class="o">=</span> <span class="n">pi</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigma</span> <span class="o">=</span> <span class="n">sigma</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">waterDens</span> <span class="o">=</span> <span class="n">waterDens</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lvtt</span> <span class="o">=</span> <span class="n">lvtt</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tt</span> <span class="o">=</span> <span class="n">tt</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">estt</span> <span class="o">=</span> <span class="n">estt</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cl</span> <span class="o">=</span> <span class="n">cl</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cpv</span> <span class="o">=</span> <span class="n">cpv</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cm</span> <span class="o">=</span> <span class="n">cm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">colburn</span> <span class="o">=</span> <span class="n">colburn</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Parameter,</span><span class="se">\n</span><span class="s1"> dayBLHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> nightBLHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> refHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;tempHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> windHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> circCoeff: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> dayThreshold: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;nightThreshold: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> treeFLat: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> grassFLat: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> vegAlbedo: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;vegStart: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> vegEnd: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> nightSetStart: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> nightSetEnd: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;windMin: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> wgmax: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> exCoeff: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> maxdx: </span><span class="si">{}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">dayBLHeight</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nightBLHeight</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">refHeight</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tempHeight</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">windHeight</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">circCoeff</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dayThreshold</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nightThreshold</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">treeFLat</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">grassFLat</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegAlbedo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">vegStart</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">vegEnd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nightSetStart</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">nightSetEnd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">windMin</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">wgmax</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">exCoeff</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">maxdx</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

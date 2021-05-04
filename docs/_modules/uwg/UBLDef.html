@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.UBLDef &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.UBLDef</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Class definition for the Urban Boundary Layer (UBL).&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">range</span> <span class="o">=</span> <span class="n">xrange</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">.utilities</span> <span class="kn">import</span> <span class="n">is_near_zero</span>
+
+
+<div class="viewcode-block" id="UBLDef"><a class="viewcode-back" href="../../uwg.UBLDef.html#uwg.UBLDef.UBLDef">[docs]</a><span class="k">class</span> <span class="nc">UBLDef</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Urban Boundary Layer (UBL) calculations.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        location: Text string for relative location within a city. Choose from &quot;N&quot;, &quot;NE&quot;,</span>
+<span class="sd">            &quot;E&quot;, &quot;SE&quot;, &quot;S&quot;, &quot;SW&quot;, &quot;W&quot;, &quot;NW&quot;, or &quot;C&quot;.</span>
+<span class="sd">        charLength: Value for characteristic length of the urban area [m].</span>
+<span class="sd">        initialTemp: Value for initial temperature [K].</span>
+<span class="sd">        maxdx: Value for maximum discretization length for the UBL model [m].</span>
+<span class="sd">        dayBLHeight: Value for daytime mixing height [m].</span>
+<span class="sd">        nightBLHeight: Value for nighttime boundary-layer height [m].</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * location -- relative location within a city (N, NE, E, SE, S, SW, W, NW, C).</span>
+<span class="sd">        * charLength -- characteristic length of the urban area (m)</span>
+<span class="sd">        * perimeter -- horizontal urban area (m2)</span>
+<span class="sd">        * urbArea -- length of the side of the urban area orthogonal</span>
+<span class="sd">        * orthLength -- length to side of urban area orthogonal to wind direction (m)</span>
+<span class="sd">        * paralLength -- length of side of urban area parallel to wind direction (m)</span>
+<span class="sd">        * ublTemp -- urban boundary layer temperature (K)</span>
+<span class="sd">        * ublTempdx -- urban boundary layer temperature discretization (K)</span>
+<span class="sd">        * dayBLHeight -- daytime mixing height, orig = 700</span>
+<span class="sd">        * nightBLHeight -- nighttime boundary-layer ht (m), Sing: 80, Bub-Cap: 50, orig 80</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">charLength</span><span class="p">,</span> <span class="n">initialTemp</span><span class="p">,</span> <span class="n">maxdx</span><span class="p">,</span> <span class="n">dayBLHeight</span><span class="p">,</span>
+                 <span class="n">nightBLHeight</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">location</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">charLength</span> <span class="o">=</span> <span class="n">charLength</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">perimeter</span> <span class="o">=</span> <span class="mf">4.</span> <span class="o">*</span> <span class="n">charLength</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">urbArea</span> <span class="o">=</span> <span class="n">charLength</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">orthLength</span> <span class="o">=</span> <span class="n">charLength</span>
+
+        <span class="n">numdx</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">charLength</span> <span class="o">/</span> <span class="nb">min</span><span class="p">(</span><span class="n">charLength</span><span class="p">,</span> <span class="n">maxdx</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">paralLength</span> <span class="o">=</span> <span class="n">charLength</span> <span class="o">/</span> <span class="n">numdx</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span> <span class="o">=</span> <span class="n">initialTemp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span> <span class="o">=</span> <span class="p">[</span><span class="n">initialTemp</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">numdx</span><span class="p">))]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dayBLHeight</span> <span class="o">=</span> <span class="n">dayBLHeight</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nightBLHeight</span> <span class="o">=</span> <span class="n">nightBLHeight</span>
+
+        <span class="c1"># Logger will be disabled by default unless explicitly called in tests</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<div class="viewcode-block" id="UBLDef.ublmodel"><a class="viewcode-back" href="../../uwg.UBLDef.html#uwg.UBLDef.UBLDef.ublmodel">[docs]</a>    <span class="k">def</span> <span class="nf">ublmodel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">UCM</span><span class="p">,</span> <span class="n">RSM</span><span class="p">,</span> <span class="n">rural</span><span class="p">,</span> <span class="n">forc</span><span class="p">,</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">simTime</span><span class="p">):</span>
+        <span class="c1"># Note that only one urban canyon area is considered</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sensHeat</span> <span class="o">=</span> <span class="n">UCM</span><span class="o">.</span><span class="n">sensHeat</span>
+        <span class="n">heatDif</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensHeat</span> <span class="o">-</span> <span class="n">rural</span><span class="o">.</span><span class="n">sens</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">Cp</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">cp</span>  <span class="c1"># Heat capacity of air (J/kg.K)</span>
+        <span class="n">k_w</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">circCoeff</span>  <span class="c1"># k_w per Bueno &#39;the uwg&#39;, eq 8</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">g</span>  <span class="c1"># Gravity</span>
+        <span class="n">v_wind</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">forc</span><span class="o">.</span><span class="n">wind</span><span class="p">,</span> <span class="n">parameter</span><span class="o">.</span><span class="n">windMin</span><span class="p">)</span>  <span class="c1"># wind velocity</span>
+
+        <span class="c1"># Air density</span>
+        <span class="n">refDens</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">iz</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzref</span><span class="p">):</span>
+            <span class="n">refDens</span> <span class="o">=</span> \
+                <span class="n">refDens</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">densityProfC</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">*</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">/</span> \
+                <span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">z</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzref</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzref</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">)</span>
+
+        <span class="n">forDens</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">iz</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzfor</span><span class="p">):</span>
+            <span class="n">forDens</span> <span class="o">=</span> \
+                <span class="n">forDens</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">densityProfC</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">*</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">/</span> \
+                <span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">z</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzfor</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzfor</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">)</span>
+
+        <span class="c1"># ---------------------------------------------------------------------</span>
+        <span class="c1"># Day</span>
+        <span class="c1"># ---------------------------------------------------------------------</span>
+        <span class="n">time</span> <span class="o">=</span> <span class="n">simTime</span><span class="o">.</span><span class="n">secDay</span> <span class="o">/</span> <span class="mf">3600.</span>
+        <span class="n">noon</span> <span class="o">=</span> <span class="mf">12.</span>
+        <span class="n">daylimit</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">dayThreshold</span>      <span class="c1"># sunlight threshold for day (~150W/m^2)</span>
+        <span class="n">nightlimit</span> <span class="o">=</span> <span class="n">parameter</span><span class="o">.</span><span class="n">dayThreshold</span>    <span class="c1"># sunlight threshold for night (~50W/m^2)</span>
+        <span class="n">sunlight</span> <span class="o">=</span> <span class="n">forc</span><span class="o">.</span><span class="n">dir</span> <span class="o">+</span> <span class="n">forc</span><span class="o">.</span><span class="n">dif</span>
+
+        <span class="c1"># If dir &amp; dif light is greater than threshold, use day</span>
+        <span class="n">is_day</span> <span class="o">=</span> <span class="p">(</span><span class="n">sunlight</span> <span class="o">&gt;</span> <span class="n">daylimit</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">time</span> <span class="o">&lt;</span> <span class="n">noon</span> <span class="ow">or</span> <span class="n">is_near_zero</span><span class="p">(</span><span class="n">time</span> <span class="o">-</span> <span class="n">noon</span><span class="p">))</span> \
+            <span class="ow">or</span> <span class="p">(</span><span class="n">sunlight</span> <span class="o">&gt;</span> <span class="n">nightlimit</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">time</span> <span class="o">&gt;</span> <span class="n">noon</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sensHeat</span> <span class="o">&gt;</span> <span class="mf">150.0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">is_day</span><span class="p">:</span>
+            <span class="c1"># Circulation velocity per Bueno &#39;the uwg&#39;, eq 8</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Day ubl calcs&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">))</span>
+            <span class="n">h_UBL</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dayBLHeight</span>            <span class="c1"># Day boundary layer height</span>
+            <span class="n">eqTemp</span> <span class="o">=</span> <span class="n">RSM</span><span class="o">.</span><span class="n">tempProf</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzref</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">eqWind</span> <span class="o">=</span> <span class="n">RSM</span><span class="o">.</span><span class="n">windProf</span><span class="p">[</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzref</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+
+            <span class="n">Csurf</span> <span class="o">=</span> <span class="n">UCM</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">*</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span> <span class="o">/</span> <span class="p">(</span><span class="n">h_UBL</span> <span class="o">*</span> <span class="n">refDens</span> <span class="o">*</span> <span class="n">Cp</span><span class="p">)</span>
+            <span class="n">u_circ</span> <span class="o">=</span> <span class="n">k_w</span> <span class="o">*</span> <span class="p">(</span><span class="n">g</span> <span class="o">*</span> <span class="n">heatDif</span> <span class="o">/</span> <span class="n">Cp</span> <span class="o">/</span> <span class="n">refDens</span> <span class="o">/</span> <span class="n">eqTemp</span> <span class="o">*</span> <span class="n">h_UBL</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="mf">3.</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">v_wind</span> <span class="o">&gt;</span> <span class="n">u_circ</span><span class="p">:</span>  <span class="c1"># Forced problem (usually this)</span>
+                <span class="n">advCoef</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">orthLength</span><span class="o">*</span><span class="n">eqWind</span> <span class="o">*</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">urbArea</span> <span class="o">*</span> <span class="mf">1.4</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">Csurf</span> <span class="o">+</span> <span class="n">advCoef</span> <span class="o">*</span> <span class="n">eqTemp</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="n">advCoef</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span><span class="p">))]</span>
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># Convective problem</span>
+                <span class="n">advCoef</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">perimeter</span> <span class="o">*</span> <span class="n">u_circ</span> <span class="o">*</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">urbArea</span> <span class="o">*</span> <span class="mf">1.4</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span> <span class="o">=</span> <span class="p">(</span><span class="n">Csurf</span> <span class="o">+</span> <span class="n">advCoef</span> <span class="o">*</span> <span class="n">eqTemp</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">advCoef</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span><span class="p">))]</span>
+
+        <span class="c1"># ---------------------------------------------------------------------</span>
+        <span class="c1"># Night</span>
+        <span class="c1"># ---------------------------------------------------------------------</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> Night ubl calcs&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="vm">__name__</span><span class="p">))</span>
+            <span class="n">h_UBL</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nightBLHeight</span>  <span class="c1"># Night boundary layer height</span>
+            <span class="n">Csurf</span> <span class="o">=</span> <span class="n">UCM</span><span class="o">.</span><span class="n">Q_ubl</span> <span class="o">*</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span> <span class="o">/</span> <span class="p">(</span><span class="n">h_UBL</span> <span class="o">*</span> <span class="n">refDens</span> <span class="o">*</span> <span class="n">Cp</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span> <span class="o">=</span> \
+                <span class="n">UBLDef</span><span class="o">.</span><span class="n">nightforc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTempdx</span><span class="p">,</span> <span class="n">simTime</span><span class="o">.</span><span class="n">dt</span><span class="p">,</span> <span class="n">h_UBL</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">paralLength</span><span class="p">,</span>
+                                 <span class="bp">self</span><span class="o">.</span><span class="n">charLength</span><span class="p">,</span> <span class="n">RSM</span><span class="p">,</span> <span class="n">Csurf</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;ublTemp = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="UBLDef.nightforc"><a class="viewcode-back" href="../../uwg.UBLDef.html#uwg.UBLDef.UBLDef.nightforc">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">nightforc</span><span class="p">(</span><span class="n">ublTempdx</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">h_UBL</span><span class="p">,</span> <span class="n">paralLength</span><span class="p">,</span> <span class="n">charLength</span><span class="p">,</span> <span class="n">RSM</span><span class="p">,</span> <span class="n">Csurf</span><span class="p">):</span>
+        <span class="c1"># Night forcing (RSM.nzfor = number of layers of forcing)</span>
+        <span class="c1"># Average potential temperature &amp; wind speed of the profile</span>
+        <span class="n">intAdv1</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">iz</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzfor</span><span class="p">):</span>
+            <span class="n">intAdv1</span> <span class="o">=</span> <span class="n">intAdv1</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">windProf</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">*</span> <span class="n">RSM</span><span class="o">.</span><span class="n">tempProf</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">*</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span>
+
+        <span class="n">advCoef1</span> <span class="o">=</span> <span class="mf">1.4</span> <span class="o">*</span> <span class="n">dt</span> <span class="o">/</span> <span class="n">paralLength</span> <span class="o">/</span> <span class="n">h_UBL</span> <span class="o">*</span> <span class="n">intAdv1</span>
+
+        <span class="n">intAdv2</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">iz</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">RSM</span><span class="o">.</span><span class="n">nzfor</span><span class="p">):</span>
+            <span class="n">intAdv2</span> <span class="o">=</span> <span class="n">intAdv2</span> <span class="o">+</span> <span class="n">RSM</span><span class="o">.</span><span class="n">windProf</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span> <span class="o">*</span> <span class="n">RSM</span><span class="o">.</span><span class="n">dz</span><span class="p">[</span><span class="n">iz</span><span class="p">]</span>
+
+        <span class="n">advCoef2</span> <span class="o">=</span> <span class="mf">1.4</span> <span class="o">*</span> <span class="n">dt</span> <span class="o">/</span> <span class="n">paralLength</span> <span class="o">/</span> <span class="n">h_UBL</span> <span class="o">*</span> <span class="n">intAdv2</span>
+
+        <span class="n">ublTempdx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">Csurf</span> <span class="o">+</span> <span class="n">advCoef1</span> <span class="o">+</span> <span class="n">ublTempdx</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">advCoef2</span><span class="p">)</span>
+        <span class="n">ublTemp</span> <span class="o">=</span> <span class="n">ublTempdx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">charLength</span><span class="p">)</span> <span class="o">//</span> <span class="nb">int</span><span class="p">(</span><span class="n">paralLength</span><span class="p">)):</span>
+            <span class="n">eqTemp</span> <span class="o">=</span> <span class="n">ublTempdx</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+            <span class="n">ublTempdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">Csurf</span> <span class="o">+</span> <span class="n">advCoef2</span><span class="o">*</span><span class="n">eqTemp</span> <span class="o">+</span> <span class="n">ublTempdx</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">advCoef2</span><span class="p">)</span>
+            <span class="n">ublTemp</span> <span class="o">=</span> <span class="n">ublTemp</span> <span class="o">+</span> <span class="n">ublTempdx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+        <span class="n">ublTemp</span> <span class="o">=</span> <span class="n">ublTemp</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">charLength</span><span class="p">)</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">paralLength</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">ublTemp</span><span class="p">,</span> <span class="n">ublTempdx</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;UBL,</span><span class="se">\n</span><span class="s1"> location: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> charLength: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> perimeter: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> urbArea: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;orthLength: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> paralLength: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> ublTemp: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> dayBLHeight: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;nightBLHeight: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">charLength</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">perimeter</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">urbArea</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">orthLength</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">paralLength</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ublTemp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dayBLHeight</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">nightBLHeight</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

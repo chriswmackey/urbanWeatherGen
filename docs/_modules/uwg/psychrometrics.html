@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.psychrometrics &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.psychrometrics</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Functions for sychrometric calculations.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span> <span class="nb">pow</span><span class="p">,</span> <span class="n">exp</span>
+
+
+<div class="viewcode-block" id="psychrometrics"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.psychrometrics">[docs]</a><span class="k">def</span> <span class="nf">psychrometrics</span><span class="p">(</span><span class="n">Tdb_in</span><span class="p">,</span> <span class="n">w_in</span><span class="p">,</span> <span class="n">P</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Modified version of Psychometrics by Tea Zakula MIT Building Technology Lab.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        Tdb_in: Number for dry bulb temperature (K).</span>
+<span class="sd">        w_in: Number for Humidity Ratio (kgv/kgda).</span>
+<span class="sd">        P: Atmospheric Station Pressure (P).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        A tuple with six values</span>
+
+<span class="sd">        - Tdb: Number for dry bulb temperature in (C).</span>
+
+<span class="sd">        - w: Number for Humidity Ratio (kgv/kgda).</span>
+
+<span class="sd">        - phi: Number for relative humidity (Pw/Pws*100).</span>
+
+<span class="sd">        - h: Number for enthalpy (J/kga).</span>
+
+<span class="sd">        - Tdp: Number for dew point temperature (C).</span>
+
+<span class="sd">        - v: Number for specific volume (m3/kga).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Change units</span>
+    <span class="n">c_air</span> <span class="o">=</span> <span class="mf">1006.</span>  <span class="c1"># [J/kg] air heat capacity, value from ASHRAE Fundamentals</span>
+    <span class="n">hlg</span> <span class="o">=</span> <span class="mf">2501000.</span>  <span class="c1"># [J/kg] latent heat, value from ASHRAE Fundamentals</span>
+    <span class="n">cw</span> <span class="o">=</span> <span class="mf">1860.</span>  <span class="c1"># [J/kg] value from ASHRAE Fundamentals</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P</span> <span class="o">/</span> <span class="mf">1000.</span>  <span class="c1"># convert from Pa to kPa</span>
+
+    <span class="n">Tdb</span> <span class="o">=</span> <span class="n">Tdb_in</span> <span class="o">-</span> <span class="mf">273.15</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">w_in</span>
+
+    <span class="c1"># phi (RH) calculation from Tdb and w</span>
+    <span class="n">Pw</span> <span class="o">=</span> <span class="p">(</span><span class="n">w</span> <span class="o">*</span> <span class="n">P</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">0.621945</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>  <span class="c1"># partial pressure of water vapor</span>
+    <span class="n">Pws</span> <span class="o">=</span> <span class="n">saturation_pressure</span><span class="p">(</span><span class="n">Tdb</span><span class="p">)</span>  <span class="c1"># Get saturation pressure for given Tdb</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="n">Pw</span> <span class="o">/</span> <span class="n">Pws</span> <span class="o">*</span> <span class="mf">100.0</span>
+
+    <span class="c1"># enthalpy calculation from Tdb and w</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">c_air</span> <span class="o">*</span> <span class="n">Tdb</span> <span class="o">+</span> <span class="n">w</span> <span class="o">*</span> <span class="p">(</span><span class="n">hlg</span> <span class="o">+</span> <span class="n">cw</span> <span class="o">*</span> <span class="n">Tdb</span><span class="p">)</span>  <span class="c1"># [J kga-1]</span>
+
+    <span class="c1"># specific volume calculation from Tdb and w</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="p">(</span><span class="n">Tdb</span> <span class="o">+</span> <span class="mf">273.15</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">1.607858</span> <span class="o">*</span> <span class="n">w</span><span class="p">)</span> <span class="o">/</span> <span class="n">P</span>
+
+    <span class="c1"># dew point calculation from w</span>
+    <span class="n">_pw</span> <span class="o">=</span> <span class="p">(</span><span class="n">w</span> <span class="o">*</span> <span class="n">P</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">0.621945</span> <span class="o">+</span> <span class="n">w</span><span class="p">)</span>  <span class="c1"># water vapor partial pressure in kPa</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">_pw</span><span class="p">)</span>
+
+    <span class="n">Tdp</span> <span class="o">=</span> <span class="mf">6.54</span> <span class="o">+</span> <span class="mf">14.526</span> <span class="o">*</span> <span class="n">alpha</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.7389</span> <span class="o">+</span> <span class="nb">pow</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.09486</span> <span class="o">+</span> \
+        <span class="nb">pow</span><span class="p">(</span><span class="n">_pw</span><span class="p">,</span> <span class="mf">0.1984</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.4569</span>  <span class="c1"># valid for Tdp between 0 C and 93 C</span>
+
+    <span class="k">return</span> <span class="n">Tdb</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">Tdp</span><span class="p">,</span> <span class="n">v</span></div>
+
+
+<div class="viewcode-block" id="saturation_pressure"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.saturation_pressure">[docs]</a><span class="k">def</span> <span class="nf">saturation_pressure</span><span class="p">(</span><span class="n">Tdb_</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Saturation pressure from dry bulb pressure.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        Tdb_: Dry bulb temperature (K).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Saturation pressure.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">T</span> <span class="o">=</span> <span class="n">Tdb_</span> <span class="o">+</span> <span class="mf">273.15</span>
+
+    <span class="c1"># N.B In Matlab, negative values are converted to complex values.</span>
+    <span class="c1"># log(-x) = log(x) + log(-1) = log(x) + i*pi</span>
+    <span class="c1"># Python will throw an exception. Negative value occurs here if simulation</span>
+    <span class="c1"># timestep (dtSim) is large, i.e 3600s.</span>
+    <span class="n">_Pws</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="mf">5.8002206e3</span> <span class="o">/</span> <span class="n">T</span> <span class="o">+</span> <span class="mf">1.3914993</span> <span class="o">+</span> <span class="mf">4.8640239e-2</span> <span class="o">*</span> <span class="n">T</span> <span class="o">*</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">+</span>
+               <span class="mf">4.1764768e-5</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.4452093e-8</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span>
+               <span class="mf">6.5459673</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>  <span class="c1"># Pa</span>
+
+    <span class="k">return</span> <span class="n">_Pws</span> <span class="o">/</span> <span class="mf">1000.</span>  <span class="c1"># kPa</span></div>
+
+
+<div class="viewcode-block" id="moist_air_density"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.moist_air_density">[docs]</a><span class="k">def</span> <span class="nf">moist_air_density</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">Tdb</span><span class="p">,</span> <span class="n">H</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Moist air density (kgv m-3) from dry bulb temp, HR, and pressure[1][2][3].</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        [1] ASHRAE Fundamentals (2005) ch. 6 eqn. 28</span>
+<span class="sd">        [2] ASHRAE Fundamentals (2009) ch. 1 eqn. 28</span>
+<span class="sd">        [3] https://github.com/psychrometrics/Libraries/blob/master/Psychrometrics_SI.cpp</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        P: Number for Pressure (P).</span>
+<span class="sd">        Tdb: Number for dry bulb temperature in (C).</span>
+<span class="sd">        H: Number for Humidity Ratio (kgv/kgda).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Moist air density (kgv m-3).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">P</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mf">0.287042</span> <span class="o">*</span> <span class="n">Tdb</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">+</span> <span class="mf">1.607858</span> <span class="o">*</span> <span class="n">H</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="hum_from_rhum_temp"><a class="viewcode-back" href="../../uwg.psychrometrics.html#uwg.psychrometrics.hum_from_rhum_temp">[docs]</a><span class="k">def</span> <span class="nf">hum_from_rhum_temp</span><span class="p">(</span><span class="n">RH</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">P</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Specific Humidity (kgh20/kgn202) from RH, T and Pa.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        RH: Number for Relative Humidity.</span>
+<span class="sd">        T: Number for dry bulb temperature (C).</span>
+<span class="sd">        P: Number for air pressure (P).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Specific Humidity (kgh20/kgn202).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Saturation vapour pressure from ASHRAE</span>
+    <span class="n">C8</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.8002206e3</span>
+    <span class="n">C9</span> <span class="o">=</span> <span class="mf">1.3914993</span>
+    <span class="n">C10</span> <span class="o">=</span> <span class="o">-</span><span class="mf">4.8640239e-2</span>
+    <span class="n">C11</span> <span class="o">=</span> <span class="mf">4.1764768e-5</span>
+    <span class="n">C12</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.4452093e-8</span>
+    <span class="n">C13</span> <span class="o">=</span> <span class="mf">6.5459673</span>
+
+    <span class="n">T</span> <span class="o">+=</span> <span class="mf">273.15</span>
+
+    <span class="n">PWS</span> <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="n">C8</span> <span class="o">/</span> <span class="n">T</span> <span class="o">+</span> <span class="n">C9</span> <span class="o">+</span> <span class="n">C10</span> <span class="o">*</span> <span class="n">T</span> <span class="o">+</span> <span class="n">C11</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">C12</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="n">C13</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">T</span><span class="p">))</span>
+    <span class="n">PW</span> <span class="o">=</span> <span class="n">RH</span> <span class="o">*</span> <span class="n">PWS</span> <span class="o">/</span> <span class="mf">100.0</span>  <span class="c1"># Vapour pressure</span>
+
+    <span class="k">return</span> <span class="mf">0.62198</span> <span class="o">*</span> <span class="n">PW</span> <span class="o">/</span> <span class="p">(</span><span class="n">P</span> <span class="o">-</span> <span class="n">PW</span><span class="p">)</span>  <span class="c1"># 4. Specific humidity</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.BEMDef &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm"></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../uwg.html">uwg package</a></li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <h1>Source code for uwg.BEMDef</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Building Energy Model (BEM) class definition.&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">.building</span> <span class="kn">import</span> <span class="n">Building</span>
+<span class="kn">from</span> <span class="nn">.element</span> <span class="kn">import</span> <span class="n">Element</span>
+<span class="kn">from</span> <span class="nn">.utilities</span> <span class="kn">import</span> <span class="n">REF_BUILTERA_SET</span><span class="p">,</span> <span class="n">REF_BUILTERA</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">str</span> <span class="o">=</span> <span class="n">basestring</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<div class="viewcode-block" id="BEMDef"><a class="viewcode-back" href="../../uwg.BEMDef.html#uwg.BEMDef.BEMDef">[docs]</a><span class="k">class</span> <span class="nc">BEMDef</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Building Energy Model (BEM) definition.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        building: Building object.</span>
+<span class="sd">        mass: Element object representing building internal mass.</span>
+<span class="sd">        wall: Element object representing building wall.</span>
+<span class="sd">        roof: Element object representing building roof.</span>
+<span class="sd">        bldtype: Text referring to a building type. By default, 16 building types are</span>
+<span class="sd">            defined in the UWG according to models from the Department of Energy (DOE).</span>
+<span class="sd">            Custom building types can also be defined with a new name. Note that this</span>
+<span class="sd">            value along with the BEMDef builtera must exactly match the identifiers in</span>
+<span class="sd">            the UWG bld list in order to specify the fraction of total built stock the</span>
+<span class="sd">            building occupies in the UWG simulation. Choose from the following to</span>
+<span class="sd">            reference or overwrite a BEM associated with a DOE reference building type:</span>
+<span class="sd">            &#39;fullservicerestaurant&#39;, &#39;hospital&#39;, &#39;largehotel&#39;, &#39;largeoffice&#39;,</span>
+<span class="sd">            &#39;mediumoffice&#39;, &#39;midriseapartment&#39;, &#39;outpatient&#39;, &#39;primaryschool&#39;,</span>
+<span class="sd">            &#39;quickservicerestaurant&#39;, &#39;secondaryschool&#39;, &#39;smallhotel&#39;, &#39;smalloffice&#39;,</span>
+<span class="sd">            &#39;standaloneretail&#39;, &#39;stripmall&#39;, &#39;supermarket&#39;, or &#39;warehouse&#39;.</span>
+<span class="sd">        builtera: Text defining building built era. Must be one of the following:</span>
+<span class="sd">            &quot;pre80&quot; (pre-1980s), &quot;pst80&quot; (post-1980s), or &quot;new&quot; (new construction).</span>
+<span class="sd">            This value along with the bldtype must exactly match the identifiers in</span>
+<span class="sd">            the bld array in order to specify the fraction of total built stock the</span>
+<span class="sd">            building occupies in the UWG simulation.</span>
+
+<span class="sd">    Properties:</span>
+<span class="sd">        * building -- Building object</span>
+<span class="sd">        * mass -- Element object representing building internal mass.</span>
+<span class="sd">        * wall -- Element object representing building wall.</span>
+<span class="sd">        * roof -- Element object representing building roof.</span>
+<span class="sd">        * frac -- fraction of the urban floor space of this building typology.</span>
+<span class="sd">        * bldtype -- number for building type</span>
+<span class="sd">        * builtera -- number for built era</span>
+<span class="sd">        * fl_area -- building typology urban floor area [m2]</span>
+<span class="sd">        * elec -- actual electricity consumption [W/m2]</span>
+<span class="sd">        * gas -- actual gas consumption [W/m2]</span>
+<span class="sd">        * light -- actual light [W/m2]</span>
+<span class="sd">        * Qocc -- actual heat load from occupant [W/m2]</span>
+<span class="sd">        * swh -- actual hot water usage</span>
+<span class="sd">        * Nocc -- number of occupants</span>
+<span class="sd">        * ElecTotal -- actual total electricity [W/m2]</span>
+<span class="sd">        * T_wallex -- wall surface temp (ext) [K]</span>
+<span class="sd">        * T_wallin -- wall surface temp (int) [K]</span>
+<span class="sd">        * T_roofex -- roof surface temp (ext) [K]</span>
+<span class="sd">        * T_roofin -- roof surface temp (int) [K]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">building</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">wall</span><span class="p">,</span> <span class="n">roof</span><span class="p">,</span> <span class="n">bldtype</span><span class="p">,</span> <span class="n">builtera</span><span class="p">):</span>
+
+        <span class="c1"># Initialization</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">building</span> <span class="o">=</span> <span class="n">building</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="n">mass</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wall</span> <span class="o">=</span> <span class="n">wall</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">roof</span> <span class="o">=</span> <span class="n">roof</span>
+
+        <span class="c1"># Properties to be set in readDOE</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bldtype</span> <span class="o">=</span> <span class="n">bldtype</span>  <span class="c1"># DOE reference building type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">builtera</span> <span class="o">=</span> <span class="n">builtera</span>  <span class="c1"># pre80, pst80, new</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">zonetype</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># climate zone number (only used in testing).</span>
+
+        <span class="c1"># Properties to be computed during UWG simulation</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">frac</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fl_area</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">elec</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gas</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">light</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Qocc</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swh</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Nocc</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ElecTotal</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_wallex</span> <span class="o">=</span> <span class="mi">293</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_wallin</span> <span class="o">=</span> <span class="mi">293</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_roofex</span> <span class="o">=</span> <span class="mi">293</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">T_roofin</span> <span class="o">=</span> <span class="mi">293</span>
+
+<div class="viewcode-block" id="BEMDef.from_dict"><a class="viewcode-back" href="../../uwg.BEMDef.html#uwg.BEMDef.BEMDef.from_dict">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a BEMDef object from a dictionary.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            data: A BEMDef dictionary following the format below.</span>
+
+<span class="sd">        .. code-block:: python</span>
+<span class="sd">            {</span>
+<span class="sd">            &quot;building&quot;: building.to_dict()  # dictionary representation of a Building.</span>
+<span class="sd">            &quot;mass&quot;: mass.to_dict()  # dictionary representation of mass Element.</span>
+<span class="sd">            &quot;wall&quot;: wall.to_dict()  # dictionary representation of wall Element.</span>
+<span class="sd">            &quot;roof&quot;: roof.to_dict()  # dictionary representation of roof Element.</span>
+<span class="sd">            &quot;bldtype&quot;: 0,  # building type index</span>
+<span class="sd">            &quot;builtera&quot;: 1,  # built era index</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BEMDef&#39;</span><span class="p">,</span> <span class="s1">&#39;Expected &#39;</span> \
+            <span class="s1">&#39;BEMDef dictionary. Got </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">])</span>
+
+        <span class="n">building</span> <span class="o">=</span> <span class="n">Building</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;building&#39;</span><span class="p">])</span>
+        <span class="n">mass</span> <span class="o">=</span> <span class="n">Element</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;mass&#39;</span><span class="p">])</span>
+        <span class="n">wall</span> <span class="o">=</span> <span class="n">Element</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;wall&#39;</span><span class="p">])</span>
+        <span class="n">roof</span> <span class="o">=</span> <span class="n">Element</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;roof&#39;</span><span class="p">])</span>
+        <span class="n">bldtype</span><span class="p">,</span> <span class="n">builtera</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;bldtype&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;builtera&#39;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">building</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">wall</span><span class="p">,</span> <span class="n">roof</span><span class="p">,</span> <span class="n">bldtype</span><span class="p">,</span> <span class="n">builtera</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">building</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set Building object.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_building</span>
+
+    <span class="nd">@building</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">building</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Building</span><span class="p">),</span> <span class="s1">&#39;building must be a Building &#39;</span> \
+            <span class="s1">&#39;object. Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_building</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">mass</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set Element as representative building internal mass.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mass</span>
+
+    <span class="nd">@mass</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">mass</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Element</span><span class="p">),</span> <span class="s1">&#39;mass must be an Element object. &#39;</span> \
+            <span class="s1">&#39;Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mass</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">roof</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set Element as representative building roof.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_roof</span>
+
+    <span class="nd">@roof</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">roof</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Element</span><span class="p">),</span> <span class="s1">&#39;roof must be an Element object. &#39;</span> \
+            <span class="s1">&#39;Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_roof</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">wall</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set Element as representative building wall.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wall</span>
+
+    <span class="nd">@wall</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">wall</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">Element</span><span class="p">),</span> <span class="s1">&#39;wall must be an Element object. &#39;</span> \
+            <span class="s1">&#39;Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_wall</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bldtype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set text for building type.</span>
+
+<span class="sd">        By default, 16 building types are defined in the UWG according to models from</span>
+<span class="sd">        the Department of Energy (DOE). Choose from the following to reference or</span>
+<span class="sd">        overwrite a BEM associated with a DOE reference building type:</span>
+
+<span class="sd">        * &#39;fullservicerestaurant&#39;</span>
+<span class="sd">        * &#39;hospital&#39;</span>
+<span class="sd">        * &#39;largehotel&#39;</span>
+<span class="sd">        * &#39;largeoffice&#39;</span>
+<span class="sd">        * &#39;medoffice&#39;</span>
+<span class="sd">        * &#39;midriseapartment&#39;</span>
+<span class="sd">        * &#39;outpatient&#39;</span>
+<span class="sd">        * &#39;primaryschool&#39;</span>
+<span class="sd">        * &#39;quickservicerestaurant&#39;</span>
+<span class="sd">        * &#39;secondaryschool&#39;</span>
+<span class="sd">        * &#39;smallhotel&#39;</span>
+<span class="sd">        * &#39;smalloffice&#39;</span>
+<span class="sd">        * &#39;standaloneretail&#39;</span>
+<span class="sd">        * &#39;stripmall&#39;</span>
+<span class="sd">        * &#39;supermarket&#39;</span>
+<span class="sd">        * &#39;warehouse&#39;</span>
+
+<span class="sd">        Custom building types can also be defined with a new name. If a custom BEMDef is</span>
+<span class="sd">        defined with the same name as a reference DOE building type from the list above,</span>
+<span class="sd">        the reference BEMDef will be overwritten by the custom BEMDef. Note that this</span>
+<span class="sd">        value along with the BEMDef builtera must exactly match the identifiers in the</span>
+<span class="sd">        UWG bld list in order to specify the fraction of total built stock the building</span>
+<span class="sd">        occupies in the UWG simulation.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bldtype</span>
+
+    <span class="nd">@bldtype</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">bldtype</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">),</span> <span class="s1">&#39;The bldtype must be a string. &#39;</span> \
+            <span class="s1">&#39;Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bldtype</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">builtera</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get or set text for built era.</span>
+
+<span class="sd">        Must be one of the following:</span>
+
+<span class="sd">        * &#39;pre80&#39; - pre-1980s</span>
+<span class="sd">        * &#39;pst80&#39; - post-1980s</span>
+<span class="sd">        * &#39;new&#39; - new construction</span>
+
+<span class="sd">        This value along with the bldtype must exactly match the identifiers in</span>
+<span class="sd">        the bld array in order to specify the fraction of total built stock the</span>
+<span class="sd">        building occupies in the UWG simulation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_builtera</span>
+
+    <span class="nd">@builtera</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">builtera</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">REF_BUILTERA_SET</span><span class="p">,</span> \
+            <span class="s1">&#39;The builtera must be one of </span><span class="si">{}</span><span class="s1">.Got: </span><span class="si">{}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">REF_BUILTERA</span><span class="p">,</span> <span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_builtera</span> <span class="o">=</span> <span class="n">value</span>
+
+<div class="viewcode-block" id="BEMDef.to_dict"><a class="viewcode-back" href="../../uwg.BEMDef.html#uwg.BEMDef.BEMDef.to_dict">[docs]</a>    <span class="k">def</span> <span class="nf">to_dict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;BEMDef dictionary representation.&quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;BEMDef&#39;</span><span class="p">}</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;building&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">building</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;mass&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;wall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;roof&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;bldtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">bldtype</span>
+        <span class="n">base</span><span class="p">[</span><span class="s1">&#39;builtera&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">builtera</span>
+        <span class="k">return</span> <span class="n">base</span></div>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;BEMDef,</span><span class="se">\n</span><span class="s1"> bldtype: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> builtera: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> mass: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> &#39;</span> \
+            <span class="s1">&#39;wall: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> roof: </span><span class="si">{}</span><span class="se">\n</span><span class="s1"> frac: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">bldtype</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">builtera</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">wall</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">roof</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">frac</span><span class="p">)</span></div>
+</pre></div>
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

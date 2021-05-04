@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.building module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.element module" href="uwg.element.html" />
+    <link rel="prev" title="uwg.UCMDef module" href="uwg.UCMDef.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.UCMDef.html" title="Previous Chapter: uwg.UCMDef module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.UCMDef module</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.element.html" title="Next Chapter: uwg.element module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.element module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.building.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.building module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.element.html">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.building">
+<span id="uwg-building-module"></span><h1>uwg.building module<a class="headerlink" href="#module-uwg.building" title="Permalink to this headline">¶</a></h1>
+<p>Class of specified building characteristics.</p>
+<dl class="py class">
+<dt id="uwg.building.Building">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">uwg.building.</span></code><code class="sig-name descname"><span class="pre">Building</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">floor_height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_heat_night</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_heat_day</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_heat_frad</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int_heat_flat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">infil</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">glazing_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shgc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condtype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coolcap</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heateff</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_temp</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/building.html#Building"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.building.Building" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Specified building characteristics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>floor_height</strong> – Floor height in meters.</p></li>
+<li><p><strong>int_heat_night</strong> – Nighttime internal sensible heat gain [W/m2].</p></li>
+<li><p><strong>int_heat_day</strong> – Daytime internal sensible heat gain [W/m2].</p></li>
+<li><p><strong>int_heat_frad</strong> – Value between 0 and 1 for radiant fraction of internal gains.</p></li>
+<li><p><strong>int_heat_flat</strong> – Value between 0 and 1 for latent fraction of internal gains.</p></li>
+<li><p><strong>infil</strong> – Infiltration rate (ACH).</p></li>
+<li><p><strong>vent</strong> – Ventilation rate (ACH).</p></li>
+<li><p><strong>glazing_ratio</strong> – Value between 0 and 1 for glazing ratio.</p></li>
+<li><p><strong>u_value</strong> – Window U-value including film coefficent [W/(m2-K)].</p></li>
+<li><p><strong>shgc</strong> – Value between 0 and 1 for window Solar Heat Gain Coefficient (SHGC).</p></li>
+<li><p><strong>condtype</strong> – Text string for cooling condensation system type. Choose from AIR or
+WATER.</p></li>
+<li><p><strong>cop</strong> – Coefficient of Performance (COP) of cooling system (nominal).</p></li>
+<li><p><strong>coolcap</strong> – Rated cooling system capacity [W/m2].</p></li>
+<li><p><strong>heateff</strong> – Heating system capacity.</p></li>
+<li><p><strong>initial_temp</strong> – Initial indoor air temperature [K].</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>floor_height – floor height (m)</p></li>
+<li><p>int_heat – timestep internal heat gains (W m-2 bld) (sensible only)</p></li>
+<li><p>int_heat_night – nighttime internal heat gains (W m-2 floor)</p></li>
+<li><p>int_heat_day – daytime internal heat gains (W m-2 floor)</p></li>
+<li><p>int_heat_frad – radiant fraction of internal gains</p></li>
+<li><p>int_heat_flat – latent fraction of internal gains</p></li>
+<li><p>infil – Infiltration (ACH)</p></li>
+<li><p>vent – Ventilation (m^3/s/m^2)</p></li>
+<li><p>glazing_ratio – glazing ratio</p></li>
+<li><p>u_value – window U-value (W m-2 K-1) (including film coeff)</p></li>
+<li><p>shgc – window SHGC</p></li>
+<li><p>condtype – cooling condensation system type {‘AIR’, ‘WATER’}</p></li>
+<li><p>cop – COP of the cooling system (nominal)</p></li>
+<li><p>cop_adj – adjusted COP per temperature</p></li>
+<li><p>cool_setpoint_day – daytime indoor cooling set-point (K)</p></li>
+<li><p>cool_setpoint_night – nighttime indoor cooling set-point (K)</p></li>
+<li><p>heat_setpoint_day – daytime indoor heating set-point (K)</p></li>
+<li><p>heat_setpoint_night – nighttime indoor heating set-point (K)</p></li>
+<li><p>heat_cap – rated heating system capacity (W m-2)</p></li>
+<li><p>heateff – heating system efficiency (-)</p></li>
+<li><p>canyon_fraction – fraction of waste heat released to canyon, default = 1</p></li>
+<li><p>msys – HVAC supply mass flowrate (kg s-1 m-2)</p></li>
+<li><p>indoor_temp – indoor air temperature (K)</p></li>
+<li><p>indoor_hum – indoor specific humidity (kg / kg)</p></li>
+<li><p>Twb – wetbulb temperature</p></li>
+<li><p>Tdp – dew point</p></li>
+<li><p>indoorRhum – indoor relative humidity</p></li>
+<li><p>area_floor – total floor space of the BEM</p></li>
+<li><p>FanMax – max fan flow rate (m^3/s) per DOE</p></li>
+<li><p>nFloor – number of floors</p></li>
+<li><p>RadFOcc – Radiant fraction of occupant</p></li>
+<li><p>LatFOcc – Latent fraction of occupant</p></li>
+<li><p>RadFEquip – Radiant fraction of equipment</p></li>
+<li><p>RadFLight – Radiant fraction of light</p></li>
+<li><p>sensCoolDemand – building sensible cooling demand (W m-2)</p></li>
+<li><p>sensHeatDemand – building sensible heating demand (W m-2)</p></li>
+<li><p>copAdj – adjusted COP per temperature</p></li>
+<li><p>dehumDemand – dehumidification energy (W m-2)</p></li>
+<li><p>coolConsump – cooling energy consumption (W m-2)</p></li>
+<li><p>heatConsump – heating energy consumption (W m-2)</p></li>
+<li><p>sensWaste – sensible waste heat (W m-2)</p></li>
+<li><p>latWaste – lat waste heat (W m-2)</p></li>
+<li><p>fluxMass – mass surface heat flux (W m-2) (mass to indoor air)</p></li>
+<li><p>fluxWall – wall surface heat flux (W m-2) (wall to inside)</p></li>
+<li><p>fluxRoof – roof surface heat flux (W m-2) (roof to inside)</p></li>
+<li><p>fluxSolar – solar heat gain (W m-2) through window (SHGC)</p></li>
+<li><p>fluxWindow – heat gain/loss from window (U-value)</p></li>
+<li><p>fluxInterior – internal heat gain adjusted for latent/LW heat (W m-2)</p></li>
+<li><p>fluxInfil – heat flux from infiltration (W m-2)</p></li>
+<li><p>fluxVent – heat flux from ventilation (W m-2)</p></li>
+<li><p>ElecTotal – total electricity consumption - (W/m^2) of floor</p></li>
+<li><p>GasTotal – total gas consumption - (W/m^2) of floor</p></li>
+<li><p>Qhvac – total heat removed (sensible + latent)</p></li>
+<li><p>Qheat – total heat added (sensible only)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="uwg.building.Building.BEMCalc">
+<code class="sig-name descname"><span class="pre">BEMCalc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">UCM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BEM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simTime</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/building.html#Building.BEMCalc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.building.Building.BEMCalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update BEM by a single timestep.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/building.html#Building.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.building.Building.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Building object from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A Building dictionary following the format below.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/building.html#Building.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.building.Building.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Building dictionary representation.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="uwg.building.Building.TEMP_COEF_CONFLICT_MSG">
+<code class="sig-name descname"><span class="pre">TEMP_COEF_CONFLICT_MSG</span></code><em class="property"> <span class="pre">=</span> <span class="pre">'FATAL</span> <span class="pre">ERROR!</span> <span class="pre">Try</span> <span class="pre">reducing</span> <span class="pre">the</span> <span class="pre">simulation</span> <span class="pre">timstep</span> <span class="pre">to</span> <span class="pre">fix</span> <span class="pre">this</span> <span class="pre">error.'</span></em><a class="headerlink" href="#uwg.building.Building.TEMP_COEF_CONFLICT_MSG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.condtype">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">condtype</span></code><a class="headerlink" href="#uwg.building.Building.condtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set text string for cooling condensation system type.</p>
+<p>Choose from:</p>
+<ul class="simple">
+<li><p>“AIR”</p></li>
+<li><p>“WATER”.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.coolcap">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">coolcap</span></code><a class="headerlink" href="#uwg.building.Building.coolcap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set rated cooling system capacity [W/m2].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.cop">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">cop</span></code><a class="headerlink" href="#uwg.building.Building.cop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set the nominal Coefficient of Performance (COP) of cooling system.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.floor_height">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">floor_height</span></code><a class="headerlink" href="#uwg.building.Building.floor_height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set floor height in meters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.glazing_ratio">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">glazing_ratio</span></code><a class="headerlink" href="#uwg.building.Building.glazing_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set value between 0 and 1 for glazing ratio.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.heateff">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">heateff</span></code><a class="headerlink" href="#uwg.building.Building.heateff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set heating system capacity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.infil">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">infil</span></code><a class="headerlink" href="#uwg.building.Building.infil" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set infiltration rate (ACH).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.initial_temp">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">initial_temp</span></code><a class="headerlink" href="#uwg.building.Building.initial_temp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set initial indoor air temperature [K].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.int_heat_flat">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">int_heat_flat</span></code><a class="headerlink" href="#uwg.building.Building.int_heat_flat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set value between 0 and 1 for latent fraction of internal gains.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.int_heat_frad">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">int_heat_frad</span></code><a class="headerlink" href="#uwg.building.Building.int_heat_frad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set value between 0 and 1 radiant fraction of internal gains.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.int_heat_night">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">int_heat_night</span></code><a class="headerlink" href="#uwg.building.Building.int_heat_night" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set nighttime internal sensible heat gain [W/m2].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.shgc">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">shgc</span></code><a class="headerlink" href="#uwg.building.Building.shgc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set building glazing Solar Heat Gain Coefficient.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.u_value">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">u_value</span></code><a class="headerlink" href="#uwg.building.Building.u_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set window U-value including film coefficent [W/(m2-K)].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.building.Building.vent">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vent</span></code><a class="headerlink" href="#uwg.building.Building.vent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set ventilation rate (ACH).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

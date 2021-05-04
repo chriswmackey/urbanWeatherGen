@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uwg.element module &#8212; uwg  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="uwg.forcing module" href="uwg.forcing.html" />
+    <link rel="prev" title="uwg.building module" href="uwg.building.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          uwg</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uwg.cli.html">uwg.cli package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.simulate.html">uwg.cli.simulate module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="uwg.cli.validate.html">uwg.cli.validate module</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="uwg.cli.html#module-uwg.cli">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="uwg.building.html" title="Previous Chapter: uwg.building module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; uwg.building module</span>
+    </a>
+  </li>
+  <li>
+    <a href="uwg.forcing.html" title="Next Chapter: uwg.forcing module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">uwg.forcing module &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/uwg.element.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="uwg.html">uwg package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="uwg.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="uwg.BEMDef.html">uwg.BEMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.RSMDef.html">uwg.RSMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UBLDef.html">uwg.UBLDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.UCMDef.html">uwg.UCMDef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.building.html">uwg.building module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">uwg.element module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.forcing.html">uwg.forcing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.infracalcs.html">uwg.infracalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.material.html">uwg.material module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.param.html">uwg.param module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.psychrometrics.html">uwg.psychrometrics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.readDOE.html">uwg.readDOE module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.schdef.html">uwg.schdef module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.simparam.html">uwg.simparam module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.solarcalcs.html">uwg.solarcalcs module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.urbflux.html">uwg.urbflux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.utilities.html">uwg.utilities module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.uwg.html">uwg.uwg module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uwg.weather.html">uwg.weather module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uwg.html#module-uwg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-uwg.element">
+<span id="uwg-element-module"></span><h1>uwg.element module<a class="headerlink" href="#module-uwg.element" title="Permalink to this headline">¶</a></h1>
+<p>Element class.</p>
+<dl class="py class">
+<dt id="uwg.element.Element">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">uwg.element.</span></code><code class="sig-name descname"><span class="pre">Element</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">albedo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emissivity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layer_thickness_lst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">material_lst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vegcoverage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t_init</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">horizontal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Element object defines wall, and roof constructions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>albedo</strong> – Number for outer surface albedo.</p></li>
+<li><p><strong>emissivity</strong> – Number for outer surface emissivity.</p></li>
+<li><p><strong>layer_thickness_lst</strong> – List of layer thickness in meters.</p></li>
+<li><p><strong>material_lst</strong> – List of Material objects in Element.</p></li>
+<li><p><strong>vegcoverage</strong> – Number for fraction of surface vegetation coverage.</p></li>
+<li><p><strong>t_init</strong> – Element initial temperature [K].</p></li>
+<li><p><strong>horizontal</strong> – Boolean indicating if Element is horizontal or not (vertical).</p></li>
+<li><p><strong>name</strong> – Text string for name of Element.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Properties:</dt><dd><ul class="simple">
+<li><p>albedo – outer surface albedo</p></li>
+<li><p>emissivity – outer surface emissivity.</p></li>
+<li><p>layer_thickness_lst – list of layer thickness [m]</p></li>
+<li><p>material_lst – material objects in Element.</p></li>
+<li><p>layerThermalCond – vector of layer thermal conductivities [W m-1 K-1]</p></li>
+<li><p>layerVolHeat – vector of layer volumetric heat [J m-3 K-1]</p></li>
+<li><p>vegcoverage – surface grass coverage</p></li>
+<li><p>t_init – element initial temperature [K].</p></li>
+<li><p>layerTemp – vector of layer temperatures [K]</p></li>
+<li><p>waterStorage – thickness of water film [m] for horizontal surfaces only</p></li>
+<li><p>horizontal – 1-horizontal, 0-vertical</p></li>
+<li><p>solRec – solar radiation received [W m-2]</p></li>
+<li><p>infra – net longwave radiation [W m-2]</p></li>
+<li><p>lat – surface latent heat flux [W m-2]</p></li>
+<li><p>sens – surface sensible heat flux [W m-2]</p></li>
+<li><p>solAbs – solar radiation absorbed [W m-2]</p></li>
+<li><p>aeroCond – convective heat transfer coefficient [-]</p></li>
+<li><p>T_ext – external surface temperature [K]</p></li>
+<li><p>T_int – internal surface temperature [K]</p></li>
+<li><p>flux – external surface heat flux [W m-2]</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="uwg.element.Element.Conduction">
+<code class="sig-name descname"><span class="pre">Conduction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flx1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flx2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.Conduction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.Conduction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve the conductance of heat based on of the element layers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dt</strong> – Simulation time step in seconds.</p></li>
+<li><p><strong>flx1</strong> – Net heat flux on surface [W m-2]</p></li>
+<li><p><strong>bc</strong> – Boundary condition parameter (1 or 2)</p></li>
+<li><p><strong>temp2</strong> – Deep soil temperature (ave of air temperature) [K]</p></li>
+<li><p><strong>flx2</strong> – Surface flux (sum of absorbed, emitted, etc.) [W m-2]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A 1d vector of element layer temperatures.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.SurfFlux">
+<code class="sig-name descname"><span class="pre">SurfFlux</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">forc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simTime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">humRef</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tempRef</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windRef</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundCond</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">intFlux</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.SurfFlux"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.SurfFlux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate net heat flux, and update element layer temperatures.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.from_dict">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_dict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.from_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Element object from a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> – A Element dictionary following the format below.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s2">&quot;albedo&quot;</span><span class="p">:</span> <span class="mf">0.08</span><span class="p">,</span>
+<span class="s2">&quot;emissivity&quot;</span><span class="p">:</span> <span class="mf">0.92</span><span class="p">,</span>
+<span class="s2">&quot;layer_thickness_lst&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.0254</span><span class="p">,</span> <span class="mf">0.0508</span><span class="p">,</span> <span class="mf">0.0254</span><span class="p">],</span>
+<span class="s2">&quot;material_lst&quot;</span><span class="p">:</span> <span class="n">material_dict_lst</span><span class="p">,</span>  <span class="c1"># List of material dictionaries</span>
+<span class="s2">&quot;vegcoverage&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+<span class="s2">&quot;t_init&quot;</span><span class="p">:</span> <span class="mi">293</span><span class="p">,</span>
+<span class="s2">&quot;horizontal&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">MassWall</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.invert">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">invert</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nz</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.invert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.invert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invert and solve tridiagonal matrix.</p>
+<dl class="simple">
+<dt>Given A * X = C, solves for X, where</dt><dd><p>a(<em>, 1) lower diagonal (Ai, i-1)
+a(</em>, 2) principal diagonal (Ai, i)
+a(<a href="#id1"><span class="problematic" id="id2">*</span></a>, 3) upper diagonal (Ai, i+1)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nz</strong> – number of layers.</p></li>
+<li><p><strong>A</strong> – A matrix to invert.</p></li>
+<li><p><strong>C</strong> – Result from A * X</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Solved matrix X from matrix inversion.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.qsat">
+<code class="sig-name descname"><span class="pre">qsat</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pres</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.qsat"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.qsat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate vector of saturation humidity from air pressure and layer temperatures.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>temp</strong> – List of layer temperatures [K].</p></li>
+<li><p><strong>pres</strong> – Pressure (at current timestep) [Pa].</p></li>
+<li><p><strong>parameter</strong> – Parameter object with geographic parameters.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of saturation humidity values.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.to_dict">
+<code class="sig-name descname"><span class="pre">to_dict</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/uwg/element.html#Element.to_dict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#uwg.element.Element.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element dictionary representation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.albedo">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">albedo</span></code><a class="headerlink" href="#uwg.element.Element.albedo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a value between 0 and 1 for outer surface albedo.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.emissivity">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">emissivity</span></code><a class="headerlink" href="#uwg.element.Element.emissivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set a value between 0 and 1 for outer surface emissivity.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.horizontal">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">horizontal</span></code><a class="headerlink" href="#uwg.element.Element.horizontal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set boolean value indicating if Element is horizontal or not.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.layer_thickness_lst">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">layer_thickness_lst</span></code><a class="headerlink" href="#uwg.element.Element.layer_thickness_lst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set list of thickness in meters of each Material in Element.</p>
+<p>The order of thickness should correspond to the order of the Material objects in
+material_lst.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.material_lst">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">material_lst</span></code><a class="headerlink" href="#uwg.element.Element.material_lst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set list of Material objects in the element.</p>
+<p>The order of Material objects should correspond to the order of the thickness in
+layer_thickness_lst.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.name">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#uwg.element.Element.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set text string for name of Element.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.t_init">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">t_init</span></code><a class="headerlink" href="#uwg.element.Element.t_init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set initial temperature of Element [K].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="uwg.element.Element.vegcoverage">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">vegcoverage</span></code><a class="headerlink" href="#uwg.element.Element.vegcoverage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get or set fraction of vegetation coverage on Element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
